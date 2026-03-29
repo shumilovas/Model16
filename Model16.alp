@@ -1208,6 +1208,9 @@ return myA;]]></Body>
 										<Parameter>
 											<Name><![CDATA[parameter]]></Name>
 										</Parameter>
+										<Parameter>
+											<Name><![CDATA[isBusy]]></Name>
+										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
 									<Replication Class="CodeValue">
@@ -1261,6 +1264,9 @@ return myA;]]></Body>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[homeNodes]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[{ ВоронежскаяОбласть, Нововоронеж }]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[showDefaultAnimationStatic]]></Name>
@@ -1543,7 +1549,7 @@ return myA;]]></Body>
 						<Parameter>
 							<Name><![CDATA[entityLocationQueue]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[node2]]></Code>
+								<Code><![CDATA[ВоронежскаяОбласть]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1723,7 +1729,7 @@ return myA;]]></Body>
 						<Parameter>
 							<Name><![CDATA[destinationNode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[node1]]></Code>
+								<Code><![CDATA[ВоронежскаяОбласть]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1909,7 +1915,7 @@ return myA;]]></Body>
 					<LongitudeCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</LongitudeCode>
-					<NodeCode><![CDATA[node1]]></NodeCode>
+					<NodeCode><![CDATA[ВоронежскаяОбласть]]></NodeCode>
 					<LocationNameCode Class="CodeValue">
 						<Code><![CDATA[""]]></Code>
 					</LocationNameCode>
