@@ -16,6 +16,8 @@
 		<ActiveObjectClass>
 			<Id>1774636084688</Id>
 			<Name><![CDATA[Main]]></Name>
+			<StartupCode><![CDATA[Point pt = nvrn.randomPointInside();
+traceln(pt.getLatitude() +" " +pt.getLongitude());]]></StartupCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1774636084694</Id>
@@ -551,7 +553,7 @@ return myA;]]></Body>
 						<Parameter>
 							<Name><![CDATA[locationNode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[Нововоронеж]]></Code>
+								<Code><![CDATA[nvrn]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -674,7 +676,7 @@ return myA;]]></Body>
 						<Parameter>
 							<Name><![CDATA[entityLocation]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[Нововоронеж]]></Code>
+								<Code><![CDATA[nvrn]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1265,7 +1267,7 @@ return myA;]]></Body>
 						<Parameter>
 							<Name><![CDATA[homeNodes]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[{ ВоронежскаяОбласть, Нововоронеж }]]></Code>
+								<Code><![CDATA[{ nvrn }]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1549,7 +1551,7 @@ return myA;]]></Body>
 						<Parameter>
 							<Name><![CDATA[entityLocationQueue]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[ВоронежскаяОбласть]]></Code>
+								<Code><![CDATA[nvrn]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1729,7 +1731,7 @@ return myA;]]></Body>
 						<Parameter>
 							<Name><![CDATA[destinationNode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[ВоронежскаяОбласть]]></Code>
+								<Code><![CDATA[nvrn]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1915,7 +1917,7 @@ return myA;]]></Body>
 					<LongitudeCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</LongitudeCode>
-					<NodeCode><![CDATA[ВоронежскаяОбласть]]></NodeCode>
+					<NodeCode><![CDATA[nvrn]]></NodeCode>
 					<LocationNameCode Class="CodeValue">
 						<Code><![CDATA[""]]></Code>
 					</LocationNameCode>
@@ -2082,9 +2084,9 @@ return myA;]]></Body>
 					<Height>400</Height>
 					<GISShapes>
 					</GISShapes>
-					<Latitude>51.30954573943113</Latitude>
-					<Longitude>39.2463958541571</Longitude>
-					<Scale>100000</Scale>
+					<Latitude>51.31976471037234</Latitude>
+					<Longitude>39.24478152228964</Longitude>
+					<Scale>400000</Scale>
 					<BorderColor>-4144960</BorderColor>
 					<FillColor>-1</FillColor>
 					<ShowTiles>true</ShowTiles>
@@ -2106,9 +2108,11 @@ return myA;]]></Body>
 					<AbsolutePrecisionGeneralization>1000</AbsolutePrecisionGeneralization>
 
 			<Presentation>
-				<GISPoint>
-					<Id>1774814061792</Id>
-					<Name><![CDATA[Нововоронеж]]></Name>
+				<GISRegion>
+					<FillColor>2144175423</FillColor>
+					<FillMaterial>null</FillMaterial>
+					<Id>1774983632413</Id>
+					<Name><![CDATA[nvrn]]></Name>
 					<X>0</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -2119,37 +2123,95 @@ return myA;]]></Body>
 					<LineColor>-5952982</LineColor>
 					<LineMaterial>null</LineMaterial>
 					<LineWidth>1</LineWidth>
-					<LineStyle>SOLID</LineStyle>
+					<LineStyle>DASHED</LineStyle>
 					<OsmId>39375442</OsmId>
 					<Title><![CDATA[Нововоронеж, городской округ Нововоронеж, Воронежская область, Центральный федеральный округ, Россия]]></Title>
 					<ReadOnly>true</ReadOnly>
-					<Latitude>51.30905</Latitude>	
-					<Longitude>39.2160054</Longitude>
-					<Radius>3</Radius>
-					<FillColor>2144175423</FillColor>
-				</GISPoint>
-				<GISPoint>
-					<Id>1774814098720</Id>
-					<Name><![CDATA[Колодезный]]></Name>
-					<X>0</X><Y>0</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>-5952982</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineWidth>1</LineWidth>
-					<LineStyle>SOLID</LineStyle>
-					<OsmId>343631266</OsmId>
-					<Title><![CDATA[Колодезный, Колодезянское сельское поселение, Каширский район, Воронежская область, Центральный федеральный округ, 396340, Россия]]></Title>
-					<ReadOnly>true</ReadOnly>
-					<Latitude>51.350334</Latitude>	
-					<Longitude>39.295704</Longitude>
-					<Radius>3</Radius>
-					<FillColor>2144175423</FillColor>
-				</GISPoint>
+					<Points>
+						<Point><X>51.3260362</X><Y>39.1930094</Y></Point>
+						<Point><X>51.3243698</X><Y>39.1937044</Y></Point>
+						<Point><X>51.3239316</X><Y>39.1937815</Y></Point>
+						<Point><X>51.3234554</X><Y>39.194064</Y></Point>
+						<Point><X>51.3218673</X><Y>39.1946885</Y></Point>
+						<Point><X>51.3158554</X><Y>39.1998006</Y></Point>
+						<Point><X>51.3156524</X><Y>39.1999732</Y></Point>
+						<Point><X>51.315472</X><Y>39.2003054</Y></Point>
+						<Point><X>51.3146495</X><Y>39.2010738</Y></Point>
+						<Point><X>51.3141778</X><Y>39.2012015</Y></Point>
+						<Point><X>51.3137676</X><Y>39.2016493</Y></Point>
+						<Point><X>51.3132474</X><Y>39.2020502</Y></Point>
+						<Point><X>51.3125409</X><Y>39.2023664</Y></Point>
+						<Point><X>51.3121512</X><Y>39.2023286</Y></Point>
+						<Point><X>51.3115844</X><Y>39.2027869</Y></Point>
+						<Point><X>51.3111852</X><Y>39.2034256</Y></Point>
+						<Point><X>51.3107173</X><Y>39.203715</Y></Point>
+						<Point><X>51.3102183</X><Y>39.2037948</Y></Point>
+						<Point><X>51.3097884</X><Y>39.2045647</Y></Point>
+						<Point><X>51.3091807</X><Y>39.2050718</Y></Point>
+						<Point><X>51.3080085</X><Y>39.2061906</Y></Point>
+						<Point><X>51.3078865</X><Y>39.2063318</Y></Point>
+						<Point><X>51.3069252</X><Y>39.2074435</Y></Point>
+						<Point><X>51.3053983</X><Y>39.2102119</Y></Point>
+						<Point><X>51.3047631</X><Y>39.2109215</Y></Point>
+						<Point><X>51.304636</X><Y>39.211167</Y></Point>
+						<Point><X>51.3043024</X><Y>39.2118118</Y></Point>
+						<Point><X>51.3039452</X><Y>39.2130183</Y></Point>
+						<Point><X>51.3025735</X><Y>39.2156672</Y></Point>
+						<Point><X>51.3014885</X><Y>39.2171193</Y></Point>
+						<Point><X>51.3004663</X><Y>39.218433</Y></Point>
+						<Point><X>51.2993287</X><Y>39.2188597</Y></Point>
+						<Point><X>51.2986684</X><Y>39.2191722</Y></Point>
+						<Point><X>51.2983566</X><Y>39.2211495</Y></Point>
+						<Point><X>51.3018331</X><Y>39.22366</Y></Point>
+						<Point><X>51.3017378</X><Y>39.2291435</Y></Point>
+						<Point><X>51.3044536</X><Y>39.2270039</Y></Point>
+						<Point><X>51.306935</X><Y>39.2284634</Y></Point>
+						<Point><X>51.3076218</X><Y>39.2315568</Y></Point>
+						<Point><X>51.3093763</X><Y>39.2308238</Y></Point>
+						<Point><X>51.3105591</X><Y>39.2333368</Y></Point>
+						<Point><X>51.3153023</X><Y>39.2293699</Y></Point>
+						<Point><X>51.3188613</X><Y>39.2379853</Y></Point>
+						<Point><X>51.3162197</X><Y>39.2411124</Y></Point>
+						<Point><X>51.3214468</X><Y>39.2528166</Y></Point>
+						<Point><X>51.3239617</X><Y>39.2521912</Y></Point>
+						<Point><X>51.3258562</X><Y>39.2570558</Y></Point>
+						<Point><X>51.326497</X><Y>39.2571893</Y></Point>
+						<Point><X>51.3267824</X><Y>39.2572487</Y></Point>
+						<Point><X>51.3272939</X><Y>39.2570391</Y></Point>
+						<Point><X>51.3285603</X><Y>39.2559528</Y></Point>
+						<Point><X>51.3311479</X><Y>39.2533564</Y></Point>
+						<Point><X>51.3339097</X><Y>39.2616176</Y></Point>
+						<Point><X>51.3375963</X><Y>39.2618751</Y></Point>
+						<Point><X>51.3397679</X><Y>39.2611456</Y></Point>
+						<Point><X>51.3392049</X><Y>39.2587852</Y></Point>
+						<Point><X>51.3398215</X><Y>39.2548585</Y></Point>
+						<Point><X>51.3374355</X><Y>39.2546439</Y></Point>
+						<Point><X>51.3343789</X><Y>39.2554378</Y></Point>
+						<Point><X>51.3324484</X><Y>39.255867</Y></Point>
+						<Point><X>51.3318317</X><Y>39.2539787</Y></Point>
+						<Point><X>51.3315233</X><Y>39.2526698</Y></Point>
+						<Point><X>51.3311698</X><Y>39.2528922</Y></Point>
+						<Point><X>51.3213816</X><Y>39.2288918</Y></Point>
+						<Point><X>51.325654</X><Y>39.2239359</Y></Point>
+						<Point><X>51.3245395</X><Y>39.2201865</Y></Point>
+						<Point><X>51.3261039</X><Y>39.2189469</Y></Point>
+						<Point><X>51.326358</X><Y>39.2224053</Y></Point>
+						<Point><X>51.3295779</X><Y>39.2307442</Y></Point>
+						<Point><X>51.3303039</X><Y>39.2304102</Y></Point>
+						<Point><X>51.3292458</X><Y>39.2265477</Y></Point>
+						<Point><X>51.3272399</X><Y>39.2220626</Y></Point>
+						<Point><X>51.3271189</X><Y>39.2177367</Y></Point>
+						<Point><X>51.3276754</X><Y>39.2175221</Y></Point>
+						<Point><X>51.3280709</X><Y>39.2167175</Y></Point>
+						<Point><X>51.3286005</X><Y>39.2136598</Y></Point>
+						<Point><X>51.3287825</X><Y>39.2134943</Y></Point>
+						<Point><X>51.3302295</X><Y>39.2121792</Y></Point>
+						<Point><X>51.3333064</X><Y>39.2102051</Y></Point>
+						<Point><X>51.3294415</X><Y>39.1996</Y></Point>
+						<Point><X>51.3281952</X><Y>39.1944313</Y></Point>
+						<Point><X>51.3260362</X><Y>39.1930094</Y></Point>
+					</Points>
+				</GISRegion>
 			</Presentation>
 
 				</GISMap>
@@ -2207,7 +2269,7 @@ return myA;]]></Body>
 						<Code><![CDATA[1.0]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</StepDurationCode>
-					<SpaceType>GIS</SpaceType>
+					<SpaceType>CONTINUOUS</SpaceType>
 					<WidthCode><![CDATA[500]]></WidthCode>
 					<HeightCode><![CDATA[500]]></HeightCode>
 					<ZHeightCode><![CDATA[0]]></ZHeightCode>
@@ -2405,45 +2467,6 @@ return myA;]]></Body>
 			</Presentation>
 
 				</Level>
-				<GISMap>
-					<Id>1774813728372</Id>
-					<Name><![CDATA[map]]></Name>
-					<X>0</X><Y>0</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>600</Width>
-					<Height>400</Height>
-					<GISShapes>
-					</GISShapes>
-					<Latitude>0.0</Latitude>
-					<Longitude>0.0</Longitude>
-					<Scale>109271216</Scale>
-					<BorderColor>-4144960</BorderColor>
-					<FillColor>-1</FillColor>
-					<ShowTiles>true</ShowTiles>
-					<TileURLProvider>ANYLOGIC</TileURLProvider>
-					<CustomTileURL>false</CustomTileURL>
-					<TileURL><![CDATA[https://a.tile.openstreetmap.org/[zoom]/[x]/[y].png]]></TileURL>				
-					<RouteProviderType>WEB_SERVICE</RouteProviderType>
-					<RouteNotFound>CREATE_STRAIGHT_LINE</RouteNotFound>
-					<OnlineRouteProvider>ANYLOGIC</OnlineRouteProvider>
-					<TransportType>CAR</TransportType>
-					<RoutingMethod>FASTEST</RoutingMethod>
-					<PathfindingAlgorithm>DIJKSTRABI</PathfindingAlgorithm>
-					<CustomRouteProvider>false</CustomRouteProvider>
-					<RouteSourceResourceReference>
-					</RouteSourceResourceReference>
-					<RouteGraphResourceReference>
-					</RouteGraphResourceReference>	
-					<MapScaleBasedGeneralization>true</MapScaleBasedGeneralization>
-					<AbsolutePrecisionGeneralization>1000</AbsolutePrecisionGeneralization>
-
-
-				</GISMap>
 			</Presentation>
 
 		</ActiveObjectClass>
