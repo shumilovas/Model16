@@ -121,6 +121,21 @@
 						<Type><![CDATA[Point]]></Type>        
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775068164032</Id>
+					<Name><![CDATA[RandNumbForPoint]]></Name>
+					<X>70</X><Y>140</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1775062313719</Id>
 					<Name><![CDATA[NumberOfPoints]]></Name>
@@ -590,7 +605,7 @@ return myA;]]></Body>
 						<Parameter>
 							<Name><![CDATA[locationType]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[self.LOCATION_NODE]]></Code>
+								<Code><![CDATA[self.LOCATION_LATLON]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -604,9 +619,15 @@ return myA;]]></Body>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[locationLatitude]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[collectionPoints.get(RandNumbForPoint).getLatitude()]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[locationLongitude]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[collectionPoints.get(RandNumbForPoint).getLongitude()]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[locationGeoPlaceName]]></Name>
@@ -623,7 +644,7 @@ return myA;]]></Body>
 						<Parameter>
 							<Name><![CDATA[locationNode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[nvrn]]></Code>
+								<Code><![CDATA[randomFrom(collectionPoints)]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -667,6 +688,9 @@ return myA;]]></Body>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onBeforeArrival]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[RandNumbForPoint=uniform_discr(NumberOfPoints-1);]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onAtExit]]></Name>
