@@ -17,7 +17,7 @@
 			<Id>1774636084688</Id>
 			<Name><![CDATA[Main]]></Name>
 			<StartupCode><![CDATA[определитьТочкиДляЗаказа();
-заказ.ШиротаДоставкиЗаказа=случайнаяТочкаЗаказа;
+
 ]]></StartupCode>
 			<Generic>false</Generic>
 			<GenericParameter>
@@ -112,18 +112,6 @@
 			<ConnectionsId>1774636084689</ConnectionsId>
 			<Variables>
 				<Variable Class="PlainVariable">
-					<Id>1775062503383</Id>
-					<Name><![CDATA[случайнаяТочкаЗаказа]]></Name>
-					<X>70</X><Y>110</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
 					<Id>1775159303337</Id>
 					<Name><![CDATA[рандомныйНомерЗаказа]]></Name>
 					<X>70</X><Y>170</Y>
@@ -140,7 +128,7 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1775228521390</Id>
-					<Name><![CDATA[случайнаяТочкаЗаказа1]]></Name>
+					<Name><![CDATA[случайнаяТочкаЗаказаВГеоКоорд]]></Name>
 					<X>82</X><Y>16</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -442,8 +430,8 @@ return myA;]]></Body>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[for (int k=0; k<количествоМестДляЗаказов; k++) {
-	случайнаяТочкаЗаказа1=nvrn.randomPointInside();
-    коллекцияТочекДляЗаказа.add(случайнаяТочкаЗаказа1);
+	случайнаяТочкаЗаказаВГеоКоорд=nvrn.randomPointInside();
+    коллекцияТочекДляЗаказа.add(случайнаяТочкаЗаказаВГеоКоорд);
 }
   ]]></Body>
 				</Function>
@@ -705,10 +693,9 @@ return myA;]]></Body>
 						<Parameter>
 							<Name><![CDATA[onAtExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[agent.ШиротаДоставкиЗаказа=случайнаяТочкаЗаказа;
-agent.номерЗаказаВнутриКоллекцииЗаказов=рандомныйНомерЗаказа;
-agent.ШиротаДоставкиЗаказа=коллекцияТочекДляЗаказа.get(рандомныйНомерЗаказа).getLongitude();
-agent.ДолготаДоставкиЗаказа=коллекцияТочекДляЗаказа.get(рандомныйНомерЗаказа).getLatitude();]]></Code>
+								<Code><![CDATA[agent.номерЗаказаВнутриКоллекцииЗаказов=рандомныйНомерЗаказа;
+agent.широтаДоставкиЗаказа=коллекцияТочекДляЗаказа.get(рандомныйНомерЗаказа).getLongitude();
+agent.долготаДоставкиЗаказа=коллекцияТочекДляЗаказа.get(рандомныйНомерЗаказа).getLatitude();]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2604,7 +2591,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 			<Variables>
 				<Variable Class="PlainVariable">
 					<Id>1775156090539</Id>
-					<Name><![CDATA[ШиротаДоставкиЗаказа]]></Name>
+					<Name><![CDATA[широтаДоставкиЗаказа]]></Name>
 					<X>120</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -2631,7 +2618,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1775228813843</Id>
-					<Name><![CDATA[ДолготаДоставкиЗаказа]]></Name>
+					<Name><![CDATA[долготаДоставкиЗаказа]]></Name>
 					<X>122</X><Y>140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
