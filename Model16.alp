@@ -209,7 +209,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-70</X><Y>-50</Y></Point>
+						<Point><X>-90</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -397,6 +397,7 @@
 
 double minDistance = 100;
 double foundedDistance = 0;
+double 
 
 traceln("РАЗМЕР ПОПУЛЯЦИИ "+myAgent1.size());
 for (int i=0;i<myAgent1.size();i++){
@@ -462,7 +463,7 @@ return myA;]]></Body>
 				<EmbeddedObject>
 					<Id>1774636106959</Id>
 					<Name><![CDATA[КлиентЗаказываетДоставку]]></Name>
-					<X>40</X><Y>210</Y>
+					<X>20</X><Y>260</Y>
 					<Label><X>-5</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
