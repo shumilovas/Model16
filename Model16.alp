@@ -1049,6 +1049,100 @@ return distM / скоростьМ_Мин;]]></Body>
 					<Body><![CDATA[double distM = рассчитатьDistancePickupМ(c, z);
 return distM / скоростьМ_Мин;]]></Body>
 				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1775338628434</Id>
+					<Name><![CDATA[курьерДопустим]]></Name>
+					<X>-1100</X><Y>210</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[c]]></Name>
+						<Type><![CDATA[Курьер]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[z]]></Name>
+						<Type><![CDATA[Заказ]]></Type>
+					</Parameter>
+					<Body><![CDATA[traceln(
+    "Курьер coords: lat=" + c.getLatitude() +
+    ", lon=" + c.getLongitude() +
+    " | pickup: lat=" + z.широтаЗабора +
+    ", lon=" + z.долготаЗабора
+);
+
+if (c == null || z == null) {
+    traceln("REJECT: c == null или z == null");
+    return false;
+}
+
+if (c.isBusy) {
+    traceln("REJECT " + c + ": isBusy");
+    return false;
+}
+
+if (!c.onShift) {
+    traceln("REJECT " + c + ": onShift = false");
+    return false;
+}
+
+if (time() < c.bannedUntil) {
+    traceln("REJECT " + c + ": bannedUntil = " + c.bannedUntil + ", time = " + time());
+    return false;
+}
+
+double etaPickup = рассчитатьEtaPickup(c, z);
+if (etaPickup > T_search) {
+    traceln("REJECT " + c + ": etaPickup = " + etaPickup + " > T_search = " + T_search);
+    return false;
+}
+
+double etaDrop = рассчитатьEtaDrop(c, z);
+
+double finishForecast =
+    time()
+    + etaPickup
+    + времяЗабора
+    + etaDrop
+    + времяПередачи;
+
+if (finishForecast > z.tDeadline) {
+    traceln("REJECT " + c + ": finishForecast = " + finishForecast + " > deadline = " + z.tDeadline);
+    return false;
+}
+
+traceln("ACCEPT " + c + ": etaPickup = " + etaPickup + ", etaDrop = " + etaDrop);
+return true;]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1775338628437</Id>
+					<Name><![CDATA[рассчитатьScoreНазначения]]></Name>
+					<X>-1350</X><Y>60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[c]]></Name>
+						<Type><![CDATA[Курьер]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[z]]></Name>
+						<Type><![CDATA[Заказ]]></Type>
+					</Parameter>
+					<Body><![CDATA[double etaPickup = рассчитатьEtaPickup(c, z);
+double etaDrop = рассчитатьEtaDrop(c, z);
+double latePenalty = рассчитатьLatePenalty(c, z);
+
+return alphaPickup * etaPickup
+     + betaDrop * etaDrop
+     + gammaLate * latePenalty;]]></Body>
+				</Function>
 			</Functions>
 			<AgentLinks>
 				<AgentLink>
