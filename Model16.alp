@@ -14,15 +14,15 @@
 	<ActiveObjectClasses>
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
-			<Id>1774636084688</Id>
+			<Id>1775338901381</Id>
 			<Name><![CDATA[Main]]></Name>
 			<StartupCode><![CDATA[определитьТочкиДляЗаказа();
 
 ]]></StartupCode>
 			<Generic>false</Generic>
 			<GenericParameter>
-				<Id>1774636084694</Id>
-				<Name><![CDATA[1774636084694]]></Name>
+				<Id>1775338901376</Id>
+				<Name><![CDATA[1775338901376]]></Name>
 				<GenericParameterValue Class="CodeValue">
 					<Code><![CDATA[T extends Agent]]></Code>
 				</GenericParameterValue>
@@ -34,7 +34,7 @@
 			<ElementsLimitValue>100</ElementsLimitValue>
 			<MakeDefaultViewArea>true</MakeDefaultViewArea>
 			<SceneGridColor/>
-			<SceneBackgroundColor/>
+			<SceneBackgroundColor>-4144960</SceneBackgroundColor>
 			<SceneSkybox>null</SceneSkybox>
 			<AgentProperties>
 				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
@@ -93,7 +93,7 @@
 					</RecurrenceCode>
 			</DatasetsCreationProperties>
 			<ScaleRuler>
-				<Id>1774636084691</Id>
+				<Id>1775338901377</Id>
 				<Name><![CDATA[scale]]></Name>
 				<X>0</X><Y>-150</Y>
 				<PublicFlag>false</PublicFlag>
@@ -108,13 +108,13 @@
 				<Scale>10</Scale>
 				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
 			</ScaleRuler>
-			<CurrentLevel>1774636084695</CurrentLevel>
-			<ConnectionsId>1774636084689</ConnectionsId>
+			<CurrentLevel>1775338901457</CurrentLevel>
+			<ConnectionsId>1775338901918</ConnectionsId>
 			<Variables>
 				<Variable Class="PlainVariable">
-					<Id>1775159303337</Id>
+					<Id>1775338901413</Id>
 					<Name><![CDATA[рандомныйНомерЗаказа]]></Name>
-					<X>70</X><Y>170</Y>
+					<X>-390</X><Y>60</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -127,9 +127,9 @@
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775228521390</Id>
+					<Id>1775338901415</Id>
 					<Name><![CDATA[случайнаяТочкаЗаказаВГеоКоорд]]></Name>
-					<X>82</X><Y>16</Y>
+					<X>-390</X><Y>30</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -139,9 +139,9 @@
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775336310454</Id>
-					<Name><![CDATA[alphaPickup]]></Name>
-					<X>-390</X><Y>240</Y>
+					<Id>1775338901417</Id>
+					<Name><![CDATA[широтаДаркстора]]></Name>
+					<X>-390</X><Y>90</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -149,252 +149,12 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[1.0]]></Code>
+							<Code><![CDATA[55.751244]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775336310462</Id>
-					<Name><![CDATA[avgUtilization]]></Name>
-					<X>-1640</X><Y>420</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310464</Id>
-					<Name><![CDATA[betaDrop]]></Name>
-					<X>-390</X><Y>270</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0.35]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310466</Id>
-					<Name><![CDATA[completedOrders]]></Name>
-					<X>-1640</X><Y>20</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310468</Id>
-					<Name><![CDATA[deliveryTimes]]></Name>
-					<X>-1640</X><Y>220</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[ArrayList<Double>]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[new ArrayList<>()]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310470</Id>
-					<Name><![CDATA[gammaLate]]></Name>
-					<X>-390</X><Y>300</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[1000.0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310472</Id>
-					<Name><![CDATA[lateOrders]]></Name>
-					<X>-1640</X><Y>100</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310474</Id>
-					<Name><![CDATA[onTimeOrders]]></Name>
-					<X>-1640</X><Y>60</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310476</Id>
-					<Name><![CDATA[pОтказаКурьера]]></Name>
-					<X>-540</X><Y>160</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0.15]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310478</Id>
-					<Name><![CDATA[qMax]]></Name>
-					<X>-1640</X><Y>280</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310480</Id>
-					<Name><![CDATA[slaPercent]]></Name>
-					<X>-1640</X><Y>160</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310482</Id>
-					<Name><![CDATA[T_search]]></Name>
-					<X>-390</X><Y>150</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[15 * minute()]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310484</Id>
-					<Name><![CDATA[tauBan]]></Name>
-					<X>-540</X><Y>190</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[5 * minute()]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310486</Id>
-					<Name><![CDATA[utilSamples]]></Name>
-					<X>-1640</X><Y>380</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310488</Id>
-					<Name><![CDATA[utilSum]]></Name>
-					<X>-1640</X><Y>340</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310490</Id>
-					<Name><![CDATA[времяЗабора]]></Name>
-					<X>-390</X><Y>180</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[2 * minute()]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310492</Id>
-					<Name><![CDATA[времяПередачи]]></Name>
-					<X>-390</X><Y>210</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[1 * minute()]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775336310494</Id>
+					<Id>1775338901419</Id>
 					<Name><![CDATA[долготаДаркстора]]></Name>
 					<X>-390</X><Y>120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -409,22 +169,127 @@
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775336310496</Id>
-					<Name><![CDATA[рандомныйНомерЗаказа1]]></Name>
-					<X>-390</X><Y>60</Y>
+					<Id>1775338901421</Id>
+					<Name><![CDATA[T_search]]></Name>
+					<X>-390</X><Y>150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
+						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[15 * minute()]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775336310498</Id>
+					<Id>1775338901423</Id>
+					<Name><![CDATA[времяЗабора]]></Name>
+					<X>-390</X><Y>180</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[2 * minute()]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901425</Id>
+					<Name><![CDATA[времяПередачи]]></Name>
+					<X>-390</X><Y>210</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[1 * minute()]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901427</Id>
+					<Name><![CDATA[alphaPickup]]></Name>
+					<X>-390</X><Y>240</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[1.0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901429</Id>
+					<Name><![CDATA[betaDrop]]></Name>
+					<X>-390</X><Y>270</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.35]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901431</Id>
+					<Name><![CDATA[gammaLate]]></Name>
+					<X>-390</X><Y>300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[1000.0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901433</Id>
+					<Name><![CDATA[pОтказаКурьера]]></Name>
+					<X>-540</X><Y>160</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.15]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901435</Id>
+					<Name><![CDATA[tauBan]]></Name>
+					<X>-540</X><Y>190</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[5 * minute()]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901437</Id>
 					<Name><![CDATA[скоростьМ_Мин]]></Name>
 					<X>-800</X><Y>200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -439,21 +304,54 @@
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775336310500</Id>
-					<Name><![CDATA[случайнаяТочкаЗаказаВГеоКоорд1]]></Name>
-					<X>-390</X><Y>30</Y>
+					<Id>1775338901439</Id>
+					<Name><![CDATA[completedOrders]]></Name>
+					<X>-1640</X><Y>20</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[Point]]></Type>        
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775336310502</Id>
-					<Name><![CDATA[широтаДаркстора]]></Name>
-					<X>-390</X><Y>90</Y>
+					<Id>1775338901441</Id>
+					<Name><![CDATA[onTimeOrders]]></Name>
+					<X>-1640</X><Y>60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901443</Id>
+					<Name><![CDATA[lateOrders]]></Name>
+					<X>-1640</X><Y>100</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901445</Id>
+					<Name><![CDATA[slaPercent]]></Name>
+					<X>-1640</X><Y>160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -461,14 +359,89 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[55.751244]]></Code>
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901447</Id>
+					<Name><![CDATA[deliveryTimes]]></Name>
+					<X>-1640</X><Y>220</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[ArrayList<Double>]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[new ArrayList<>()]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901449</Id>
+					<Name><![CDATA[qMax]]></Name>
+					<X>-1640</X><Y>280</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901451</Id>
+					<Name><![CDATA[utilSum]]></Name>
+					<X>-1640</X><Y>340</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901453</Id>
+					<Name><![CDATA[utilSamples]]></Name>
+					<X>-1640</X><Y>380</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338901455</Id>
+					<Name><![CDATA[avgUtilization]]></Name>
+					<X>-1640</X><Y>420</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="Parameter">
-					<Id>1775062313719</Id>
+					<Id>1775338901914</Id>
 					<Name><![CDATA[количествоМестДляЗаказов]]></Name>
-					<X>70</X><Y>60</Y>
+					<X>-840</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -481,7 +454,7 @@
 							<Code><![CDATA[2]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
-							<Id>1775062313717</Id>
+							<Id>1775338901912</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
@@ -490,9 +463,9 @@
 					</Properties>                 
 				</Variable>
 				<Variable Class="CollectionVariable">
-					<Id>1775061413391</Id>
+					<Id>1775338901383</Id>
 					<Name><![CDATA[коллекцияТочекДляЗаказа]]></Name>
-					<X>70</X><Y>40</Y>
+					<X>-840</X><Y>30</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -501,147 +474,18 @@
 						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
 						<ElementClass><![CDATA[Point]]></ElementClass>
 						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+						<CollectionInitializer Class="CodeValue">
+							<Code><![CDATA[{ }]]></Code>
+						</CollectionInitializer>
 					</Properties>
 
 				</Variable>
 			</Variables>
 			<Connectors>
 				<Connector>
-					<Id>1774636119484</Id>
-					<Name><![CDATA[connector]]></Name>
-					<X>140</X><Y>270</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[model16]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[очередьДоставок]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Queue]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[model16]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[КлиентЗаказываетДоставку]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Source]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-90</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1774637228465</Id>
-					<Name><![CDATA[connector6]]></Name>
-					<X>250</X><Y>220</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[model16]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[наЗаказНазначаетсяКурьер]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Seize]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[model16]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[очередьДоставок]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Queue]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-70</X><Y>50</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1774638808239</Id>
-					<Name><![CDATA[connector2]]></Name>
-					<X>330</X><Y>270</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[model16]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[курьерПеремещаетсяНаМестоДоставки]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[MoveTo]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[model16]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[наЗаказНазначаетсяКурьер]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Seize]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-40</X><Y>-50</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1774638875921</Id>
-					<Name><![CDATA[connector7]]></Name>
-					<X>410</X><Y>320</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[model16]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[курьерПередаетЗаказ]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Delay]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[model16]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[курьерПеремещаетсяНаМестоДоставки]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[MoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-40</X><Y>-50</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1774640086004</Id>
+					<Id>1775338901889</Id>
 					<Name><![CDATA[connector1]]></Name>
-					<X>800</X><Y>220</Y>
+					<X>-200</X><Y>560</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -668,13 +512,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-210</X><Y>0</Y></Point>
+						<Point><X>-170</X><Y>-30</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
-					<Id>1774640086006</Id>
+					<Id>1775338901891</Id>
 					<Name><![CDATA[connector3]]></Name>
-					<X>550</X><Y>220</Y>
+					<X>-410</X><Y>530</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -701,13 +545,343 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-100</X><Y>100</Y></Point>
+						<Point><X>-140</X><Y>20</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1775338901893</Id>
+					<Name><![CDATA[connector4]]></Name>
+					<X>-650</X><Y>480</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[курьерЕдетККлиенту]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[MoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[курьерПередаетЗаказ]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>70</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1775338901895</Id>
+					<Name><![CDATA[connector5]]></Name>
+					<X>-770</X><Y>580</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[курьерЗабираетЗаказ]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[курьерЕдетКТочкеЗабора]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[MoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-80</X><Y>-30</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1775338901897</Id>
+					<Name><![CDATA[connector7]]></Name>
+					<X>-730</X><Y>580</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[курьерЗабираетЗаказ]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[курьерЕдетККлиенту]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[MoveTo]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>40</X><Y>-100</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1775338901899</Id>
+					<Name><![CDATA[connector8]]></Name>
+					<X>-1490</X><Y>520</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[заказГотовится]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[КлиентЗаказываетДоставку]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Source]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-120</X><Y>-30</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1775338901901</Id>
+					<Name><![CDATA[connector]]></Name>
+					<X>-1450</X><Y>520</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[заказГотовится]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[очередьДоставок]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>140</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1775338901903</Id>
+					<Name><![CDATA[connector6]]></Name>
+					<X>-1270</X><Y>520</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[очередьДоставок]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[наЗаказНазначаетсяКурьер]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Seize]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>100</X><Y>-10</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1775338901905</Id>
+					<Name><![CDATA[connector2]]></Name>
+					<X>-1130</X><Y>510</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[наЗаказНазначаетсяКурьер]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Seize]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[курьерПодтверждаетЗаказ]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>70</X><Y>40</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1775338901907</Id>
+					<Name><![CDATA[connector9]]></Name>
+					<X>-1040</X><Y>550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[курьерПодтверждаетЗаказ]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[outT]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[курьерЕдетКТочкеЗабора]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[MoveTo]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>150</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1775338901909</Id>
+					<Name><![CDATA[connector10]]></Name>
+					<X>-1240</X><Y>410</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[освободитьПослеОтказа]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Release]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[курьерПодтверждаетЗаказ]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[outF]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>190</X><Y>150</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1775338901911</Id>
+					<Name><![CDATA[connector11]]></Name>
+					<X>-1200</X><Y>410</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[освободитьПослеОтказа]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Release]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[очередьДоставок]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-110</X><Y>110</Y></Point>
 					</Points>
 				</Connector>
 			</Connectors>
 			<Events>
 				<Event>
-					<Id>1775338155662</Id>
+					<Id>1775338901887</Id>
 					<Name><![CDATA[мониторингЗагрузки]]></Name>
 					<X>-1420</X><Y>240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -755,48 +929,55 @@ avgUtilization = utilSamples == 0 ? 0 : utilSum / utilSamples;]]></Action>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
 					<ReturnType><![CDATA[Курьер]]></ReturnType>
-					<Id>1774787326698</Id>
+					<Id>1775338901385</Id>
 					<Name><![CDATA[найтиБлижайшегоКурьера]]></Name>
-					<X>80</X><Y>140</Y>
+					<X>-1100</X><Y>60</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Parameter>
-						<Name><![CDATA[agent]]></Name>
-						<Type><![CDATA[Agent]]></Type>
+						<Name><![CDATA[Заказ]]></Name>
+						<Type><![CDATA[Заказ]]></Type>
 					</Parameter>
-					<Body><![CDATA[Курьер myA = null;
+					<Body><![CDATA[Курьер best = null;
+double bestScore = Double.POSITIVE_INFINITY;
 
-double minDistance = 100;
-double foundedDistance = 0;
-
-for (int i=0;i<myAgent1.size();i++){
- 	traceln("итератор "+i); 	
- 	traceln(myAgent1.get(i).parameter);
- 	Курьер myAgentCheck = myAgent1.get(i);
-	double dist = getDistance(agent.getX(), 
-							  agent.getY(), 
-							  myAgentCheck.getX(), 
-							  myAgentCheck.getY());
-	
-	if (dist <= minDistance && foundedDistance < dist && !myAgentCheck.isBusy ) {
-		myA = myAgentCheck;
- 		foundedDistance = dist;
- 	}
+if (Заказ == null) {
+    return null;
 }
 
-//traceln("Выбран агент MyA под id " + myA.getId() +" distance " +foundedDistance);
-traceln(" __________________");
+for (int i = 0; i < myAgent1.size(); i++) {
+    Курьер c = myAgent1.get(i);
 
-return myA;]]></Body>
+    if (!курьерДопустим(c, Заказ)) {
+        continue;
+    }
+
+    double score = рассчитатьScoreНазначения(c, Заказ);
+    traceln(
+	    "CANDIDATE " + c +
+	    " | etaPickup=" + рассчитатьEtaPickup(c, Заказ) +
+	    " | etaDrop=" + рассчитатьEtaDrop(c, Заказ) +
+	    " | latePenalty=" + рассчитатьLatePenalty(c, Заказ) +
+	    " | score=" + score
+	);
+
+    if (score < bestScore) {
+        bestScore = score;
+        best = c;
+    }
+}
+traceln("BEST for " + Заказ + " = " + best + " | bestScore=" + bestScore);
+
+return best;]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>VOID</ReturnModificator>
 					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1775062367437</Id>
+					<Id>1775338901387</Id>
 					<Name><![CDATA[определитьТочкиДляЗаказа]]></Name>
-					<X>70</X><Y>80</Y>
+					<X>-1100</X><Y>30</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -810,55 +991,7 @@ return myA;]]></Body>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
 					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1775337523486</Id>
-					<Name><![CDATA[рассчитатьТекущуюЗагрузкуКурьеров]]></Name>
-					<X>-1360</X><Y>140</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[if (myAgent1.isEmpty()) {
-    return 0;
-}
-
-int busyCount = 0;
-
-for (int i = 0; i < myAgent1.size(); i++) {
-    if (myAgent1.get(i).isBusy) {
-        busyCount++;
-    }
-}
-
-return (double) busyCount / myAgent1.size();]]></Body>
-				</Function>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-					<ReturnType><![CDATA[boolean]]></ReturnType>
-					<Id>1775337723983</Id>
-					<Name><![CDATA[курьерПринимаетЗаказ]]></Name>
-					<X>-1350</X><Y>90</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Parameter>
-						<Name><![CDATA[c]]></Name>
-						<Type><![CDATA[Курьер]]></Type>
-					</Parameter>
-					<Parameter>
-						<Name><![CDATA[z]]></Name>
-						<Type><![CDATA[Заказ]]></Type>
-					</Parameter>
-					<Body><![CDATA[if (c == null || z == null) {
-    return false;
-}
-
-return uniform(0, 1) >= pОтказаКурьера;]]></Body>
-				</Function>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1775337799235</Id>
+					<Id>1775338901389</Id>
 					<Name><![CDATA[расстояниеКм]]></Name>
 					<X>-1100</X><Y>90</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -897,7 +1030,7 @@ return R * c;]]></Body>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
 					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1775337862236</Id>
+					<Id>1775338901391</Id>
 					<Name><![CDATA[расстояниеМ]]></Name>
 					<X>-1100</X><Y>120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -925,113 +1058,7 @@ return R * c;]]></Body>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
 					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1775337981199</Id>
-					<Name><![CDATA[рассчитатьP95]]></Name>
-					<X>-1360</X><Y>120</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[if (deliveryTimes.isEmpty()) {
-    return 0;
-}
-
-ArrayList<Double> sorted = new ArrayList<>(deliveryTimes);
-Collections.sort(sorted);
-
-int n = sorted.size();
-int index = (int) Math.ceil(0.95 * n) - 1;
-
-index = max(0, min(index, n - 1));
-
-return sorted.get(index);]]></Body>
-				</Function>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1775338243225</Id>
-					<Name><![CDATA[рассчитатьDistanceDropМ]]></Name>
-					<X>-1100</X><Y>270</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Parameter>
-						<Name><![CDATA[z]]></Name>
-						<Type><![CDATA[Заказ]]></Type>
-					</Parameter>
-					<Body><![CDATA[return расстояниеМ(
-    z.широтаЗабора, z.долготаЗабора,
-    z.широтаКлиента, z.долготаКлиента
-);]]></Body>
-				</Function>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1775338545844</Id>
-					<Name><![CDATA[рассчитатьDistanceDropМ1]]></Name>
-					<X>-1100</X><Y>270</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Parameter>
-						<Name><![CDATA[z]]></Name>
-						<Type><![CDATA[Заказ]]></Type>
-					</Parameter>
-					<Body><![CDATA[return расстояниеМ(
-    z.широтаЗабора, z.долготаЗабора,
-    z.широтаКлиента, z.долготаКлиента
-);]]></Body>
-				</Function>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1775338545846</Id>
-					<Name><![CDATA[рассчитатьDistancePickupМ]]></Name>
-					<X>-1100</X><Y>240</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Parameter>
-						<Name><![CDATA[c]]></Name>
-						<Type><![CDATA[Курьер]]></Type>
-					</Parameter>
-					<Parameter>
-						<Name><![CDATA[z]]></Name>
-						<Type><![CDATA[Заказ]]></Type>
-					</Parameter>
-					<Body><![CDATA[return расстояниеМ(
-    c.getLatitude(), c.getLongitude(),
-    z.широтаЗабора, z.долготаЗабора
-);]]></Body>
-				</Function>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1775338545848</Id>
-					<Name><![CDATA[рассчитатьEtaDrop]]></Name>
-					<X>-1100</X><Y>180</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Parameter>
-						<Name><![CDATA[c]]></Name>
-						<Type><![CDATA[Курьер]]></Type>
-					</Parameter>
-					<Parameter>
-						<Name><![CDATA[z]]></Name>
-						<Type><![CDATA[Заказ]]></Type>
-					</Parameter>
-					<Body><![CDATA[double distM = рассчитатьDistanceDropМ(z);
-return distM / скоростьМ_Мин;]]></Body>
-				</Function>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1775338545850</Id>
+					<Id>1775338901393</Id>
 					<Name><![CDATA[рассчитатьEtaPickup]]></Name>
 					<X>-1100</X><Y>150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -1051,8 +1078,29 @@ return distM / скоростьМ_Мин;]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1775338901395</Id>
+					<Name><![CDATA[рассчитатьEtaDrop]]></Name>
+					<X>-1100</X><Y>180</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[c]]></Name>
+						<Type><![CDATA[Курьер]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[z]]></Name>
+						<Type><![CDATA[Заказ]]></Type>
+					</Parameter>
+					<Body><![CDATA[double distM = рассчитатьDistanceDropМ(z);
+return distM / скоростьМ_Мин;]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
 					<ReturnType><![CDATA[boolean]]></ReturnType>
-					<Id>1775338628434</Id>
+					<Id>1775338901397</Id>
 					<Name><![CDATA[курьерДопустим]]></Name>
 					<X>-1100</X><Y>210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -1120,7 +1168,79 @@ return true;]]></Body>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
 					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1775338628437</Id>
+					<Id>1775338901399</Id>
+					<Name><![CDATA[рассчитатьDistancePickupМ]]></Name>
+					<X>-1100</X><Y>240</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[c]]></Name>
+						<Type><![CDATA[Курьер]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[z]]></Name>
+						<Type><![CDATA[Заказ]]></Type>
+					</Parameter>
+					<Body><![CDATA[return расстояниеМ(
+    c.getLatitude(), c.getLongitude(),
+    z.широтаЗабора, z.долготаЗабора
+);]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1775338901401</Id>
+					<Name><![CDATA[рассчитатьDistanceDropМ]]></Name>
+					<X>-1100</X><Y>270</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[z]]></Name>
+						<Type><![CDATA[Заказ]]></Type>
+					</Parameter>
+					<Body><![CDATA[return расстояниеМ(
+    z.широтаЗабора, z.долготаЗабора,
+    z.широтаКлиента, z.долготаКлиента
+);]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1775338901403</Id>
+					<Name><![CDATA[рассчитатьLatePenalty]]></Name>
+					<X>-1350</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[c]]></Name>
+						<Type><![CDATA[Курьер]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[z]]></Name>
+						<Type><![CDATA[Заказ]]></Type>
+					</Parameter>
+					<Body><![CDATA[double etaPickup = рассчитатьEtaPickup(c, z);
+double etaDrop = рассчитатьEtaDrop(c, z);
+
+double finishForecast =
+    time()
+    + etaPickup
+    + времяЗабора
+    + etaDrop
+    + времяПередачи;
+
+return max(0, finishForecast - z.tDeadline);]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1775338901405</Id>
 					<Name><![CDATA[рассчитатьScoreНазначения]]></Name>
 					<X>-1350</X><Y>60</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -1143,10 +1263,82 @@ return alphaPickup * etaPickup
      + betaDrop * etaDrop
      + gammaLate * latePenalty;]]></Body>
 				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1775338901407</Id>
+					<Name><![CDATA[курьерПринимаетЗаказ]]></Name>
+					<X>-1350</X><Y>90</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[c]]></Name>
+						<Type><![CDATA[Курьер]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[z]]></Name>
+						<Type><![CDATA[Заказ]]></Type>
+					</Parameter>
+					<Body><![CDATA[if (c == null || z == null) {
+    return false;
+}
+
+return uniform(0, 1) >= pОтказаКурьера;]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1775338901409</Id>
+					<Name><![CDATA[рассчитатьP95]]></Name>
+					<X>-1360</X><Y>120</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[if (deliveryTimes.isEmpty()) {
+    return 0;
+}
+
+ArrayList<Double> sorted = new ArrayList<>(deliveryTimes);
+Collections.sort(sorted);
+
+int n = sorted.size();
+int index = (int) Math.ceil(0.95 * n) - 1;
+
+index = max(0, min(index, n - 1));
+
+return sorted.get(index);]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1775338901411</Id>
+					<Name><![CDATA[рассчитатьТекущуюЗагрузкуКурьеров]]></Name>
+					<X>-1360</X><Y>140</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[if (myAgent1.isEmpty()) {
+    return 0;
+}
+
+int busyCount = 0;
+
+for (int i = 0; i < myAgent1.size(); i++) {
+    if (myAgent1.get(i).isBusy) {
+        busyCount++;
+    }
+}
+
+return (double) busyCount / myAgent1.size();]]></Body>
+				</Function>
 			</Functions>
 			<AgentLinks>
 				<AgentLink>
-					<Id>1774636084689</Id>
+					<Id>1775338901918</Id>
 					<Name><![CDATA[connections]]></Name>
 					<X>50</X><Y>-50</Y>
 					<Label><X>15</X><Y>0</Y></Label>
@@ -1168,9 +1360,9 @@ return alphaPickup * etaPickup
 
 			<EmbeddedObjects>
 				<EmbeddedObject>
-					<Id>1774636106959</Id>
+					<Id>1775338901465</Id>
 					<Name><![CDATA[КлиентЗаказываетДоставку]]></Name>
-					<X>20</X><Y>260</Y>
+					<X>-1640</X><Y>480</Y>
 					<Label><X>-5</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1300,12 +1492,12 @@ return alphaPickup * etaPickup
 								<IsAgentEntity>true</IsAgentEntity>
 								<EntityEmbeddedObject>
 									<ActiveObjectClass>
-										<PackageName><![CDATA[model16]]></PackageName>
+										<PackageName><![CDATA[model162]]></PackageName>
 										<ClassName><![CDATA[Заказ]]></ClassName>
 									</ActiveObjectClass>
 									<GenericParameterSubstitute>
 										<GenericParameterSubstituteReference>
-											<PackageName><![CDATA[model16]]></PackageName>
+											<PackageName><![CDATA[model162]]></PackageName>
 											<ClassName><![CDATA[Заказ]]></ClassName>
 											<ItemName><![CDATA[1775156026618]]></ItemName>
 										</GenericParameterSubstituteReference>
@@ -1401,9 +1593,28 @@ return alphaPickup * etaPickup
 						<Parameter>
 							<Name><![CDATA[onAtExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[agent.номерЗаказаВнутриКоллекцииЗаказов=рандомныйНомерЗаказа;
-agent.широтаДоставкиЗаказа=коллекцияТочекДляЗаказа.get(рандомныйНомерЗаказа).getLongitude();
-agent.долготаДоставкиЗаказа=коллекцияТочекДляЗаказа.get(рандомныйНомерЗаказа).getLatitude();]]></Code>
+								<Code><![CDATA[Point p = областьДоставки.randomPointInside();
+
+agent.точкаКлиента = p;
+agent.широтаКлиента = p.getLatitude();
+agent.долготаКлиента = p.getLongitude();
+
+agent.широтаЗабора = широтаДаркстора;
+agent.долготаЗабора = долготаДаркстора;
+
+agent.tCreate = time();
+agent.prepTime = uniform(5*minute(), 15*minute());
+agent.tReady = agent.tCreate + agent.prepTime;
+agent.tDeadline = agent.tCreate + 60*minute();
+
+agent.isReady = false;
+
+traceln(
+    "SOURCE: pickup lat=" + agent.широтаЗабора +
+    ", lon=" + agent.долготаЗабора +
+    " | client lat=" + agent.широтаКлиента +
+    ", lon=" + agent.долготаКлиента
+);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1418,7 +1629,7 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						<Code><![CDATA[100]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<InitialLocationType>XYZ</InitialLocationType>
 					<XCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</XCode>
@@ -1453,9 +1664,9 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
-					<Id>1774636117566</Id>
+					<Id>1775338901518</Id>
 					<Name><![CDATA[очередьДоставок]]></Name>
-					<X>140</X><Y>250</Y>
+					<X>-1310</X><Y>500</Y>
 					<Label><X>-5</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1481,7 +1692,7 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						<Parameter>
 							<Name><![CDATA[entityLocation]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[nvrn]]></Code>
+								<Code><![CDATA[областьДоставки]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1510,12 +1721,18 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[qMax = max(qMax, очередьДоставок.size());]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onAtExit]]></Name>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[qMax = max(qMax, очередьДоставок.size());]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExitTimeout]]></Name>
@@ -1532,7 +1749,7 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						<Code><![CDATA[100]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<InitialLocationType>XYZ</InitialLocationType>
 					<XCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</XCode>
@@ -1567,9 +1784,9 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
-					<Id>1774636142631</Id>
+					<Id>1775338901539</Id>
 					<Name><![CDATA[курьерПередаетЗаказ]]></Name>
-					<X>410</X><Y>300</Y>
+					<X>-590</X><Y>530</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1592,7 +1809,7 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						<Parameter>
 							<Name><![CDATA[delayTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[10]]></Code>
+								<Code><![CDATA[времяПередачи]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 							</Value>
 						</Parameter>
@@ -1622,6 +1839,33 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[agent.tFinish = time();
+agent.actualDeliveryTime = agent.tFinish - agent.tCreate;
+agent.onTime = agent.tFinish <= agent.tDeadline;
+agent.delayAmount = max(0, agent.tFinish - agent.tDeadline);
+
+completedOrders++;
+deliveryTimes.add(agent.actualDeliveryTime);
+
+if (agent.onTime) {
+    onTimeOrders++;
+} else {
+    lateOrders++;
+}
+
+slaPercent = completedOrders == 0 ? 0 : 100.0 * onTimeOrders / completedOrders;
+
+traceln(
+    "FINISH: order=" + agent +
+    " | tCreate=" + agent.tCreate +
+    " | tDeadline=" + agent.tDeadline +
+    " | tFinish=" + agent.tFinish +
+    " | actualDeliveryTime=" + agent.actualDeliveryTime +
+    " | onTime=" + agent.onTime +
+    " | SLA%=" + slaPercent
+);]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onRemove]]></Name>
@@ -1632,7 +1876,7 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						<Code><![CDATA[100]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<InitialLocationType>XYZ</InitialLocationType>
 					<XCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</XCode>
@@ -1667,9 +1911,9 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
-					<Id>1774636164807</Id>
+					<Id>1775338901555</Id>
 					<Name><![CDATA[sink]]></Name>
-					<X>800</X><Y>210</Y>
+					<X>-200</X><Y>550</Y>
 					<Label><X>-10</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1698,7 +1942,7 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						<Code><![CDATA[100]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<InitialLocationType>XYZ</InitialLocationType>
 					<XCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</XCode>
@@ -1733,9 +1977,9 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
-					<Id>1774637184507</Id>
+					<Id>1775338901561</Id>
 					<Name><![CDATA[resourcePool]]></Name>
-					<X>160</X><Y>330</Y>
+					<X>-800</X><Y>650</Y>
 					<Label><X>-25</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1761,7 +2005,7 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						<Parameter>
 							<Name><![CDATA[capacity]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[5]]></Code>
+								<Code><![CDATA[500]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1794,12 +2038,12 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 								<IsAgentEntity>true</IsAgentEntity>
 								<EntityEmbeddedObject>
 									<ActiveObjectClass>
-										<PackageName><![CDATA[model16]]></PackageName>
+										<PackageName><![CDATA[model162]]></PackageName>
 										<ClassName><![CDATA[Курьер]]></ClassName>
 									</ActiveObjectClass>
 									<GenericParameterSubstitute>
 										<GenericParameterSubstituteReference>
-											<PackageName><![CDATA[model16]]></PackageName>
+											<PackageName><![CDATA[model162]]></PackageName>
 											<ClassName><![CDATA[Курьер]]></ClassName>
 											<ItemName><![CDATA[1774639241569]]></ItemName>
 										</GenericParameterSubstituteReference>
@@ -1855,6 +2099,10 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[speed]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[скоростьМ_Мин]]></Code>
+								<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[homeLocationType]]></Name>
@@ -1865,7 +2113,7 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						<Parameter>
 							<Name><![CDATA[homeNodes]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[{ nvrn }]]></Code>
+								<Code><![CDATA[{ gisPoint70 }]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2030,7 +2278,7 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						<Code><![CDATA[100]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<InitialLocationType>XYZ</InitialLocationType>
 					<XCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</XCode>
@@ -2065,9 +2313,9 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
-					<Id>1774637226061</Id>
+					<Id>1775338901637</Id>
 					<Name><![CDATA[наЗаказНазначаетсяКурьер]]></Name>
-					<X>250</X><Y>200</Y>
+					<X>-1170</X><Y>490</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2149,7 +2397,7 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						<Parameter>
 							<Name><![CDATA[entityLocationQueue]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[nvrn]]></Code>
+								<Code><![CDATA[областьДоставки]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2179,7 +2427,7 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						<Parameter>
 							<Name><![CDATA[resourceChoiceCondition]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[((Курьер)unit).equals(найтиБлижайшегоКурьера(agent));]]></Code>
+								<Code><![CDATA[((Курьер)unit) == найтиБлижайшегоКурьера(agent)]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2224,8 +2472,9 @@ agent.долготаДоставкиЗаказа=коллекцияТочекД�
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[if (agent != null) traceln("agent == null");
-traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.00, 51.00));]]></Code>
+								<Code><![CDATA[if (agent == null) {
+    traceln("agent == null");
+}]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2237,8 +2486,32 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 						<Parameter>
 							<Name><![CDATA[onSeizeUnit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[traceln("РАССТОЯНИЕ ОТ ЮНИТА ДО 51" + unit.distanceTo(51.00, 51.00));
-((Курьер)unit).isBusy = true;]]></Code>
+								<Code><![CDATA[Курьер c = (Курьер) unit;
+
+c.isBusy = true;
+agent.назначенныйКурьер = c;
+
+agent.расстояниеPickupМ = рассчитатьDistancePickupМ(c, agent);
+agent.расстояниеDropМ = рассчитатьDistanceDropМ(agent);
+
+agent.etaPickup = рассчитатьEtaPickup(c, agent);
+agent.etaDrop = рассчитатьEtaDrop(c, agent);
+
+agent.прогнозНачалаДоставки = time() + agent.etaPickup + времяЗабора;
+agent.прогнозЗавершения = time() + agent.etaPickup + времяЗабора + agent.etaDrop + времяПередачи;
+
+agent.latePenalty = рассчитатьLatePenalty(c, agent);
+agent.scoreНазначения = рассчитатьScoreНазначения(c, agent);
+
+traceln(
+    "ASSIGN: order=" + agent +
+    " | courier=" + c +
+    " | pickupDistM=" + agent.расстояниеPickupМ +
+    " | dropDistM=" + agent.расстояниеDropМ +
+    " | etaPickup=" + agent.etaPickup +
+    " | etaDrop=" + agent.etaDrop +
+    " | finishForecast=" + agent.прогнозЗавершения
+);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2246,6 +2519,14 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[agent.курьерПринялЗаказ = курьерПринимаетЗаказ(agent.назначенныйКурьер, agent);
+traceln(
+    "DECISION: order=" + agent +
+    " | courier=" + agent.назначенныйКурьер +
+    " | accepted=" + agent.курьерПринялЗаказ
+);]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onRemove]]></Name>
@@ -2271,7 +2552,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 						<Code><![CDATA[100]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<InitialLocationType>XYZ</InitialLocationType>
 					<XCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</XCode>
@@ -2306,9 +2587,9 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
-					<Id>1774638806909</Id>
+					<Id>1775338901691</Id>
 					<Name><![CDATA[курьерПеремещаетсяНаМестоДоставки]]></Name>
-					<X>330</X><Y>250</Y>
+					<X>-2100</X><Y>440</Y>
 					<Label><X>-10</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2334,7 +2615,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 						<Parameter>
 							<Name><![CDATA[destinationNode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[nvrn]]></Code>
+								<Code><![CDATA[областьДоставки]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2427,7 +2708,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 						<Code><![CDATA[100]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<InitialLocationType>XYZ</InitialLocationType>
 					<XCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</XCode>
@@ -2462,21 +2743,20 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
-					<Id>1774639248735</Id>
+					<Id>1775338901726</Id>
 					<Name><![CDATA[myAgent1]]></Name>
-					<X>370</X><Y>50</Y>
-					<Label><X>-30</X><Y>-30</Y></Label>
+					<X>-590</X><Y>110</Y>
+					<Label><X>20</X><Y>-5</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<PresentationId>1774639251828</PresentationId>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[model16]]></PackageName>
+						<PackageName><![CDATA[model162]]></PackageName>
 						<ClassName><![CDATA[Курьер]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[model16]]></PackageName>
+							<PackageName><![CDATA[model162]]></PackageName>
 							<ClassName><![CDATA[Курьер]]></ClassName>
 							<ItemName><![CDATA[1774639241569]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -2498,7 +2778,11 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<InEnvironment>true</InEnvironment>	
-					<InitialLocationType>NODE</InitialLocationType>
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[скоростьМ_Мин]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>XYZ</InitialLocationType>
 					<XCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</XCode>
@@ -2515,10 +2799,10 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 						<Code><![CDATA[0]]></Code>
 					</RowCode>
 					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
+						<Code><![CDATA[широтаДаркстора]]></Code>
 					</LatitudeCode>
 					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
+						<Code><![CDATA[долготаДаркстора]]></Code>
 					</LongitudeCode>
 					<NodeCode><![CDATA[nvrn]]></NodeCode>
 					<LocationNameCode Class="CodeValue">
@@ -2534,9 +2818,9 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
-					<Id>1774640082801</Id>
+					<Id>1775338901732</Id>
 					<Name><![CDATA[курьерОсвобождаетсяОтЗаказа]]></Name>
-					<X>550</X><Y>200</Y>
+					<X>-410</X><Y>510</Y>
 					<Label><X>-5</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2570,6 +2854,9 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[movingGoHome]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[wrapUpTaskPolicyType]]></Name>
@@ -2591,6 +2878,9 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onReleaseUnit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[((Курьер)unit).isBusy = false;]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
@@ -2604,7 +2894,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 						<Code><![CDATA[100]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<InitialLocationType>XYZ</InitialLocationType>
 					<XCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</XCode>
@@ -2639,84 +2929,20 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
-					<Id>1775158387060</Id>
-					<Name><![CDATA[заказ]]></Name>
-					<X>180</X><Y>-30</Y>
-					<Label><X>-20</X><Y>-30</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[model16]]></PackageName>
-						<ClassName><![CDATA[Заказ]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[model16]]></PackageName>
-							<ClassName><![CDATA[Заказ]]></ClassName>
-							<ItemName><![CDATA[1775156026618]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[средняяСтоимостьзаказа]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InEnvironment>true</InEnvironment>	
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1775159443783</Id>
+					<Id>1775338901751</Id>
 					<Name><![CDATA[заказы]]></Name>
-					<X>80</X><Y>-70</Y>
-					<Label><X>-20</X><Y>-30</Y></Label>
+					<X>-590</X><Y>30</Y>
+					<Label><X>15</X><Y>-5</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[model16]]></PackageName>
+						<PackageName><![CDATA[model162]]></PackageName>
 						<ClassName><![CDATA[Заказ]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[model16]]></PackageName>
+							<PackageName><![CDATA[model162]]></PackageName>
 							<ClassName><![CDATA[Заказ]]></ClassName>
 							<ItemName><![CDATA[1775156026618]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -2732,7 +2958,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<InEnvironment>true</InEnvironment>	
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<InitialLocationType>XYZ</InitialLocationType>
 					<XCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</XCode>
@@ -2766,11 +2992,766 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					<QuantityColumn>
 					</QuantityColumn>
 				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1775338901756</Id>
+					<Name><![CDATA[курьерЕдетКТочкеЗабора]]></Name>
+					<X>-890</X><Y>530</Y>
+					<Label><X>-15</X><Y>-15</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[MoveTo]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[MoveTo]]></ClassName>
+							<ItemName><![CDATA[1412336243157]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[mode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.DEST_LATLON]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationNode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationAttractor]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationResource]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationAgent]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationX]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationY]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationZ]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationLatitude]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[agent.широтаЗабора]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationLongitude]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[agent.долготаЗабора]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationGeoPlaceName]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationInNetwork]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationNetwork]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationLevel]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[useOffsets]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[offsetX]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[offsetY]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[offsetZ]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[straightMovement]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationUseRotation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationRotation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationVerticalRotation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[movementType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[tripTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[agent.etaPickup]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[setSpeed]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[speed]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreSpeedOnArrival]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1775338901791</Id>
+					<Name><![CDATA[курьерЕдетККлиенту]]></Name>
+					<X>-690</X><Y>460</Y>
+					<Label><X>-15</X><Y>-15</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[MoveTo]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[MoveTo]]></ClassName>
+							<ItemName><![CDATA[1412336243157]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[mode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.DEST_LATLON]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationNode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationAttractor]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationResource]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationAgent]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationX]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationY]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationZ]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationLatitude]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[agent.широтаКлиента]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationLongitude]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[agent.долготаКлиента]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationGeoPlaceName]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationInNetwork]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationNetwork]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationLevel]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[useOffsets]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[offsetX]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[offsetY]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[offsetZ]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[straightMovement]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationUseRotation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationRotation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destinationVerticalRotation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[movementType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[tripTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[agent.etaDrop]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[setSpeed]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[speed]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreSpeedOnArrival]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1775338901826</Id>
+					<Name><![CDATA[курьерЗабираетЗаказ]]></Name>
+					<X>-770</X><Y>560</Y>
+					<Label><X>-5</X><Y>-15</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Delay]]></ClassName>
+							<ItemName><![CDATA[1412336242930]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[type]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[delayTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[времяЗабора]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entityLocation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[pushProtocol]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1775338901842</Id>
+					<Name><![CDATA[заказГотовится]]></Name>
+					<X>-1490</X><Y>500</Y>
+					<Label><X>-5</X><Y>-15</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Delay]]></ClassName>
+							<ItemName><![CDATA[1412336242930]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[type]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[delayTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[agent.prepTime]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entityLocation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[pushProtocol]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[agent.isReady = true;
+traceln("Заказ готов и передан в очередь назначения в момент " + time());]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1775338901858</Id>
+					<Name><![CDATA[курьерПодтверждаетЗаказ]]></Name>
+					<X>-1070</X><Y>540</Y>
+					<Label><X>-35</X><Y>-25</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[SelectOutput]]></ClassName>
+							<ItemName><![CDATA[1412336242931]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[conditionIsProbabilistic]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[agent.курьерПринялЗаказ]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitTrue]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitFalse]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1775338901869</Id>
+					<Name><![CDATA[освободитьПослеОтказа]]></Name>
+					<X>-1240</X><Y>390</Y>
+					<Label><X>-10</X><Y>-15</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Release]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Release]]></ClassName>
+							<ItemName><![CDATA[1412336243154]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[releaseMode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[resourcePool]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[quantity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[resources]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeBlocks]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[movingGoHome]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[wrapUpTaskPolicyType]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[wrapUpTaskPriority]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[wrapUpTaskMayPreemptOtherTasks]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[wrapUpTaskPreemptionPolicy]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[wrapUpUsageState]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onReleaseUnit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[Курьер c = (Курьер) unit;
+
+c.isBusy = false;
+c.bannedUntil = time() + tauBan;
+
+agent.последнийОтказавшийсяКурьер = c;
+agent.числоОтказов++;
+
+agent.назначенныйКурьер = null;
+
+traceln(
+    "REFUSAL: order=" + agent +
+    " | courier=" + unit +
+    " | bannedUntil=" + ((Курьер)unit).bannedUntil +
+    " | refusals=" + agent.числоОтказов
+);]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onWrapUpTerminated]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>XYZ</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
 			</EmbeddedObjects>
 
 			<Presentation>
 				<Level>
-					<Id>1774636084695</Id>
+					<Id>1775338901457</Id>
 					<Name><![CDATA[level]]></Name>
 					<X>0</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -2783,7 +3764,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 
 			<Presentation>
 				<EmbeddedObjectPresentation>
-					<Id>1774639251828</Id>
+					<Id>1775338901459</Id>
 					<Name><![CDATA[myAgent1_presentation]]></Name>
 					<X>190</X><Y>-380</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -2802,22 +3783,22 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					<Longitude>0.0</Longitude>
 				</EmbeddedObjectPresentation>
 				<GISMap>
-					<Id>1774813886472</Id>
+					<Id>1775338901461</Id>
 					<Name><![CDATA[map]]></Name>
-					<X>0</X><Y>570</Y>
+					<X>0</X><Y>0</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>600</Width>
-					<Height>400</Height>
+					<Width>1000</Width>
+					<Height>600</Height>
 					<GISShapes>
 					</GISShapes>
-					<Latitude>51.31976471037234</Latitude>
-					<Longitude>39.24478152228964</Longitude>
-					<Scale>400000</Scale>
+					<Latitude>55.76042613327885</Latitude>
+					<Longitude>37.63890567880832</Longitude>
+					<Scale>200000</Scale>
 					<BorderColor>-4144960</BorderColor>
 					<FillColor>-1</FillColor>
 					<ShowTiles>true</ShowTiles>
@@ -2838,377 +3819,36 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					<MapScaleBasedGeneralization>true</MapScaleBasedGeneralization>
 					<AbsolutePrecisionGeneralization>1000</AbsolutePrecisionGeneralization>
 
-			<Presentation>
-				<GISRegion>
-					<FillColor>2144175423</FillColor>
-					<FillMaterial>null</FillMaterial>
-					<Id>1774983632413</Id>
-					<Name><![CDATA[nvrn]]></Name>
-					<X>0</X><Y>0</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>-5952982</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineWidth>1</LineWidth>
-					<LineStyle>DASHED</LineStyle>
-					<OsmId>39375442</OsmId>
-					<Title><![CDATA[Нововоронеж, городской округ Нововоронеж, Воронежская область, Центральный федеральный округ, Россия]]></Title>
-					<ReadOnly>true</ReadOnly>
-					<Points>
-						<Point><X>51.3260362</X><Y>39.1930094</Y></Point>
-						<Point><X>51.3243698</X><Y>39.1937044</Y></Point>
-						<Point><X>51.3239316</X><Y>39.1937815</Y></Point>
-						<Point><X>51.3234554</X><Y>39.194064</Y></Point>
-						<Point><X>51.3218673</X><Y>39.1946885</Y></Point>
-						<Point><X>51.3158554</X><Y>39.1998006</Y></Point>
-						<Point><X>51.3156524</X><Y>39.1999732</Y></Point>
-						<Point><X>51.315472</X><Y>39.2003054</Y></Point>
-						<Point><X>51.3146495</X><Y>39.2010738</Y></Point>
-						<Point><X>51.3141778</X><Y>39.2012015</Y></Point>
-						<Point><X>51.3137676</X><Y>39.2016493</Y></Point>
-						<Point><X>51.3132474</X><Y>39.2020502</Y></Point>
-						<Point><X>51.3125409</X><Y>39.2023664</Y></Point>
-						<Point><X>51.3121512</X><Y>39.2023286</Y></Point>
-						<Point><X>51.3115844</X><Y>39.2027869</Y></Point>
-						<Point><X>51.3111852</X><Y>39.2034256</Y></Point>
-						<Point><X>51.3107173</X><Y>39.203715</Y></Point>
-						<Point><X>51.3102183</X><Y>39.2037948</Y></Point>
-						<Point><X>51.3097884</X><Y>39.2045647</Y></Point>
-						<Point><X>51.3091807</X><Y>39.2050718</Y></Point>
-						<Point><X>51.3080085</X><Y>39.2061906</Y></Point>
-						<Point><X>51.3078865</X><Y>39.2063318</Y></Point>
-						<Point><X>51.3069252</X><Y>39.2074435</Y></Point>
-						<Point><X>51.3053983</X><Y>39.2102119</Y></Point>
-						<Point><X>51.3047631</X><Y>39.2109215</Y></Point>
-						<Point><X>51.304636</X><Y>39.211167</Y></Point>
-						<Point><X>51.3043024</X><Y>39.2118118</Y></Point>
-						<Point><X>51.3039452</X><Y>39.2130183</Y></Point>
-						<Point><X>51.3025735</X><Y>39.2156672</Y></Point>
-						<Point><X>51.3014885</X><Y>39.2171193</Y></Point>
-						<Point><X>51.3004663</X><Y>39.218433</Y></Point>
-						<Point><X>51.2993287</X><Y>39.2188597</Y></Point>
-						<Point><X>51.2986684</X><Y>39.2191722</Y></Point>
-						<Point><X>51.2983566</X><Y>39.2211495</Y></Point>
-						<Point><X>51.3018331</X><Y>39.22366</Y></Point>
-						<Point><X>51.3017378</X><Y>39.2291435</Y></Point>
-						<Point><X>51.3044536</X><Y>39.2270039</Y></Point>
-						<Point><X>51.306935</X><Y>39.2284634</Y></Point>
-						<Point><X>51.3076218</X><Y>39.2315568</Y></Point>
-						<Point><X>51.3093763</X><Y>39.2308238</Y></Point>
-						<Point><X>51.3105591</X><Y>39.2333368</Y></Point>
-						<Point><X>51.3153023</X><Y>39.2293699</Y></Point>
-						<Point><X>51.3188613</X><Y>39.2379853</Y></Point>
-						<Point><X>51.3162197</X><Y>39.2411124</Y></Point>
-						<Point><X>51.3214468</X><Y>39.2528166</Y></Point>
-						<Point><X>51.3239617</X><Y>39.2521912</Y></Point>
-						<Point><X>51.3258562</X><Y>39.2570558</Y></Point>
-						<Point><X>51.326497</X><Y>39.2571893</Y></Point>
-						<Point><X>51.3267824</X><Y>39.2572487</Y></Point>
-						<Point><X>51.3272939</X><Y>39.2570391</Y></Point>
-						<Point><X>51.3285603</X><Y>39.2559528</Y></Point>
-						<Point><X>51.3311479</X><Y>39.2533564</Y></Point>
-						<Point><X>51.3339097</X><Y>39.2616176</Y></Point>
-						<Point><X>51.3375963</X><Y>39.2618751</Y></Point>
-						<Point><X>51.3397679</X><Y>39.2611456</Y></Point>
-						<Point><X>51.3392049</X><Y>39.2587852</Y></Point>
-						<Point><X>51.3398215</X><Y>39.2548585</Y></Point>
-						<Point><X>51.3374355</X><Y>39.2546439</Y></Point>
-						<Point><X>51.3343789</X><Y>39.2554378</Y></Point>
-						<Point><X>51.3324484</X><Y>39.255867</Y></Point>
-						<Point><X>51.3318317</X><Y>39.2539787</Y></Point>
-						<Point><X>51.3315233</X><Y>39.2526698</Y></Point>
-						<Point><X>51.3311698</X><Y>39.2528922</Y></Point>
-						<Point><X>51.3213816</X><Y>39.2288918</Y></Point>
-						<Point><X>51.325654</X><Y>39.2239359</Y></Point>
-						<Point><X>51.3245395</X><Y>39.2201865</Y></Point>
-						<Point><X>51.3261039</X><Y>39.2189469</Y></Point>
-						<Point><X>51.326358</X><Y>39.2224053</Y></Point>
-						<Point><X>51.3295779</X><Y>39.2307442</Y></Point>
-						<Point><X>51.3303039</X><Y>39.2304102</Y></Point>
-						<Point><X>51.3292458</X><Y>39.2265477</Y></Point>
-						<Point><X>51.3272399</X><Y>39.2220626</Y></Point>
-						<Point><X>51.3271189</X><Y>39.2177367</Y></Point>
-						<Point><X>51.3276754</X><Y>39.2175221</Y></Point>
-						<Point><X>51.3280709</X><Y>39.2167175</Y></Point>
-						<Point><X>51.3286005</X><Y>39.2136598</Y></Point>
-						<Point><X>51.3287825</X><Y>39.2134943</Y></Point>
-						<Point><X>51.3302295</X><Y>39.2121792</Y></Point>
-						<Point><X>51.3333064</X><Y>39.2102051</Y></Point>
-						<Point><X>51.3294415</X><Y>39.1996</Y></Point>
-						<Point><X>51.3281952</X><Y>39.1944313</Y></Point>
-						<Point><X>51.3260362</X><Y>39.1930094</Y></Point>
-					</Points>
-				</GISRegion>
-			</Presentation>
 
 				</GISMap>
 			</Presentation>
 
 				</Level>
 			</Presentation>
+			<Areas>
+				<Area>
+					<Id>1775338901916</Id>
+					<Name><![CDATA[viewArea]]></Name>
+					<X>-1720</X><Y>0</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Title><![CDATA[]]></Title>
+					<Width>1660</Width>
+					<Height>700</Height>
+				</Area>
+			</Areas>
 
 		</ActiveObjectClass>
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
-			<Id>1774639241563</Id>
-			<Name><![CDATA[Курьер]]></Name>
-			<Generic>false</Generic>
-			<GenericParameter>
-				<Id>1774639241569</Id>
-				<Name><![CDATA[1774639241569]]></Name>
-				<GenericParameterValue Class="CodeValue">
-					<Code><![CDATA[T extends Agent]]></Code>
-				</GenericParameterValue>
-				<GenericParameterLabel><![CDATA[Параметр настройки:]]></GenericParameterLabel>
-			</GenericParameter>
-			<FlowChartsUsage>ENTITY</FlowChartsUsage>
-			<SamplesToKeep>100</SamplesToKeep>
-			<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
-			<ElementsLimitValue>100</ElementsLimitValue>
-			<MakeDefaultViewArea>true</MakeDefaultViewArea>
-			<SceneGridColor/>
-			<SceneBackgroundColor/>
-			<SceneSkybox>null</SceneSkybox>
-			<AgentProperties>
-				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
-				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
-				<RotateAnimationVertically>false</RotateAnimationVertically>
-				<VelocityCode Class="CodeUnitValue">
-					<Code><![CDATA[10]]></Code>
-					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
-				</VelocityCode>
-				<PhysicalLength Class="CodeUnitValue">
-					<Code><![CDATA[1]]></Code>
-					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-				</PhysicalLength>
-				<PhysicalWidth Class="CodeUnitValue">
-					<Code><![CDATA[1]]></Code>
-					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-				</PhysicalWidth>
-				<PhysicalHeight Class="CodeUnitValue">
-					<Code><![CDATA[1]]></Code>
-					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
-				</PhysicalHeight>
-			</AgentProperties>
-			<EnvironmentProperties>
-					<EnableSteps>false</EnableSteps>
-					<StepDurationCode Class="CodeUnitValue">
-						<Code><![CDATA[1.0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
-					</StepDurationCode>
-					<SpaceType>CONTINUOUS</SpaceType>
-					<WidthCode><![CDATA[500]]></WidthCode>
-					<HeightCode><![CDATA[500]]></HeightCode>
-					<ZHeightCode><![CDATA[0]]></ZHeightCode>
-					<ColumnsCountCode><![CDATA[100]]></ColumnsCountCode>
-					<RowsCountCode><![CDATA[100]]></RowsCountCode>
-					<NeigborhoodType>MOORE</NeigborhoodType>
-					<LayoutType>USER_DEF</LayoutType>
-					<LayoutTypeApplyOnStartup>true</LayoutTypeApplyOnStartup>
-					<NetworkType>USER_DEF</NetworkType>
-					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
-					<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
-					<ConnectionsRangeCode><![CDATA[50]]></ConnectionsRangeCode>
-					<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
-					<MCode><![CDATA[10]]></MCode>
-			</EnvironmentProperties>
-			<DatasetsCreationProperties>
-				<AutoCreate>true</AutoCreate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1774684800000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
-					</RecurrenceCode>
-			</DatasetsCreationProperties>
-			<ScaleRuler>
-				<Id>1774639241566</Id>
-				<Name><![CDATA[scale]]></Name>
-				<X>0</X><Y>-150</Y>
-				<PublicFlag>false</PublicFlag>
-				<PresentationFlag>false</PresentationFlag>
-				<ShowLabel>false</ShowLabel>
-				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-				<Length>100</Length>
-				<Rotation>0</Rotation>
-				<ScaleType>BASED_ON_LENGTH</ScaleType>
-				<ModelLength>10</ModelLength>
-				<LengthUnits>METER</LengthUnits>
-				<Scale>10</Scale>
-				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
-			</ScaleRuler>
-			<CurrentLevel>1774639241570</CurrentLevel>
-			<ConnectionsId>1774639241564</ConnectionsId>
-			<Variables>
-				<Variable Class="Parameter">
-					<Id>1774639241609</Id>
-					<Name><![CDATA[parameter]]></Name>
-					<X>50</X><Y>50</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<ParameterEditor>
-							<Id>0</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1774812613539</Id>
-					<Name><![CDATA[isBusy]]></Name>
-					<X>50</X><Y>80</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[boolean]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[false]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1774812613537</Id>
-							<EditorContolType>CHECK_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-			</Variables>
-			<AgentLinks>
-				<AgentLink>
-					<Id>1774639241564</Id>
-					<Name><![CDATA[connections]]></Name>
-					<X>50</X><Y>-50</Y>
-					<Label><X>15</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<HandleReceiveInConnections>false</HandleReceiveInConnections>
-					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
-					<AgentLinkBidirectional>true</AgentLinkBidirectional>
-					<MessageType><![CDATA[Object]]></MessageType>
-					<LineStyle>SOLID</LineStyle>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineZOrder>UNDER_AGENTS</LineZOrder>
-					<LineArrow>NONE</LineArrow>
-					<LineArrowPosition>END</LineArrowPosition>
-				</AgentLink>
-			</AgentLinks>
-
-			<ContainerLinks>
-				<ContainerLink>
-					<Id>1774639241650</Id>
-					<Name><![CDATA[main]]></Name>
-					<X>50</X><Y>-100</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[model16]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-					</ActiveObjectClass>
-				</ContainerLink>
-			</ContainerLinks>
-
-			<Presentation>
-				<Level>
-					<Id>1774639241570</Id>
-					<Name><![CDATA[level]]></Name>
-					<X>0</X><Y>0</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
-
-			<Presentation>
-				<Figure3D>
-					<Id>1774639241573</Id>
-					<Name><![CDATA[person]]></Name>
-					<X>0</X><Y>0</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>0</X><Y>0</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[model16]]></PackageName>
-						<ClassName><![CDATA[3d/person.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[Material__3__Surf]]></Name>
-							<OriginalColor>-3355444</OriginalColor>
-						</ColorMapping>
-						<ColorMapping>
-							<Name><![CDATA[Material__5__Surf]]></Name>
-							<OriginalColor>-3355444</OriginalColor>
-						</ColorMapping>
-						<ColorMapping>
-							<Name><![CDATA[Material__6__Surf]]></Name>
-							<OriginalColor>-4083577</OriginalColor>
-						</ColorMapping>
-						<ColorMapping>
-							<Name><![CDATA[Material__2__Surf]]></Name>
-							<OriginalColor>-13355980</OriginalColor>
-						</ColorMapping>
-						<ColorMapping>
-							<Name><![CDATA[Material__4__Surf]]></Name>
-							<OriginalColor>-13355980</OriginalColor>
-						</ColorMapping>
-						<ColorMapping>
-							<Name><![CDATA[Material__1__Surf]]></Name>
-							<OriginalColor>-5279952</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>1.0</Scale>
-					<Rotation>0.0</Rotation>
-					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-			</Presentation>
-
-				</Level>
-			</Presentation>
-
-		</ActiveObjectClass>
-		<!--   =========   Active Object Class   ========  -->
-		<ActiveObjectClass>
-			<Id>1775156026612</Id>
+			<Id>1775338910069</Id>
 			<Name><![CDATA[Заказ]]></Name>
 			<Generic>false</Generic>
 			<GenericParameter>
-				<Id>1775156026618</Id>
-				<Name><![CDATA[1775156026618]]></Name>
+				<Id>1775338910064</Id>
+				<Name><![CDATA[1775338910064]]></Name>
 				<GenericParameterValue Class="CodeValue">
 					<Code><![CDATA[T extends Agent]]></Code>
 				</GenericParameterValue>
@@ -3220,7 +3860,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 			<ElementsLimitValue>100</ElementsLimitValue>
 			<MakeDefaultViewArea>true</MakeDefaultViewArea>
 			<SceneGridColor/>
-			<SceneBackgroundColor/>
+			<SceneBackgroundColor>-4144960</SceneBackgroundColor>
 			<SceneSkybox>null</SceneSkybox>
 			<AgentProperties>
 				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
@@ -3279,7 +3919,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</RecurrenceCode>
 			</DatasetsCreationProperties>
 			<ScaleRuler>
-				<Id>1775156026615</Id>
+				<Id>1775338910065</Id>
 				<Name><![CDATA[scale]]></Name>
 				<X>0</X><Y>-150</Y>
 				<PublicFlag>false</PublicFlag>
@@ -3294,13 +3934,13 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 				<Scale>10</Scale>
 				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
 			</ScaleRuler>
-			<CurrentLevel>1775156026619</CurrentLevel>
-			<ConnectionsId>1775156026613</ConnectionsId>
+			<CurrentLevel>1775338910129</CurrentLevel>
+			<ConnectionsId>1775338910134</ConnectionsId>
 			<Variables>
 				<Variable Class="PlainVariable">
-					<Id>1775156090539</Id>
-					<Name><![CDATA[широтаДоставкиЗаказа]]></Name>
-					<X>120</X><Y>80</Y>
+					<Id>1775338910071</Id>
+					<Name><![CDATA[широтаКлиента]]></Name>
+					<X>865</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3310,9 +3950,9 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775156586732</Id>
+					<Id>1775338910073</Id>
 					<Name><![CDATA[номерЗаказаВнутриКоллекцииЗаказов]]></Name>
-					<X>120</X><Y>110</Y>
+					<X>15</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3325,9 +3965,9 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775228813843</Id>
-					<Name><![CDATA[долготаДоставкиЗаказа]]></Name>
-					<X>122</X><Y>140</Y>
+					<Id>1775338910075</Id>
+					<Name><![CDATA[долготаКлиента]]></Name>
+					<X>865</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3337,9 +3977,9 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775240347474</Id>
+					<Id>1775338910077</Id>
 					<Name><![CDATA[дедлайн]]></Name>
-					<X>120</X><Y>170</Y>
+					<X>15</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3352,39 +3992,21 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358649</Id>
-					<Name><![CDATA[actualDeliveryTime]]></Name>
-					<X>360</X><Y>270</Y>
+					<Id>1775338910079</Id>
+					<Name><![CDATA[точкаКлиента]]></Name>
+					<X>865</X><Y>20</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
+						<Type><![CDATA[Point]]></Type>        
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358651</Id>
-					<Name><![CDATA[delayAmount]]></Name>
-					<X>360</X><Y>300</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775338358653</Id>
-					<Name><![CDATA[etaDrop]]></Name>
-					<X>535</X><Y>170</Y>
+					<Id>1775338910081</Id>
+					<Name><![CDATA[широтаЗабора]]></Name>
+					<X>730</X><Y>20</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3394,9 +4016,21 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358655</Id>
-					<Name><![CDATA[etaPickup]]></Name>
-					<X>535</X><Y>140</Y>
+					<Id>1775338910083</Id>
+					<Name><![CDATA[назначенныйКурьер]]></Name>
+					<X>535</X><Y>20</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[Курьер]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338910085</Id>
+					<Name><![CDATA[долготаЗабора]]></Name>
+					<X>730</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3406,7 +4040,19 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358657</Id>
+					<Id>1775338910087</Id>
+					<Name><![CDATA[расстояниеPickupМ]]></Name>
+					<X>535</X><Y>50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338910089</Id>
 					<Name><![CDATA[etaДоЗабораС]]></Name>
 					<X>535</X><Y>100</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -3418,73 +4064,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358659</Id>
-					<Name><![CDATA[isReady]]></Name>
-					<X>360</X><Y>230</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[boolean]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[false]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775338358661</Id>
-					<Name><![CDATA[latePenalty]]></Name>
-					<X>535</X><Y>275</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775338358663</Id>
-					<Name><![CDATA[onTime]]></Name>
-					<X>360</X><Y>190</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[boolean]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[false]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775338358665</Id>
-					<Name><![CDATA[prepTime]]></Name>
-					<X>360</X><Y>50</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775338358667</Id>
-					<Name><![CDATA[scoreНазначения]]></Name>
-					<X>535</X><Y>310</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775338358669</Id>
+					<Id>1775338910091</Id>
 					<Name><![CDATA[tCreate]]></Name>
 					<X>360</X><Y>20</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -3496,7 +4076,31 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358671</Id>
+					<Id>1775338910093</Id>
+					<Name><![CDATA[prepTime]]></Name>
+					<X>360</X><Y>50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338910095</Id>
+					<Name><![CDATA[tReady]]></Name>
+					<X>360</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338910097</Id>
 					<Name><![CDATA[tDeadline]]></Name>
 					<X>360</X><Y>130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -3508,7 +4112,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358673</Id>
+					<Id>1775338910099</Id>
 					<Name><![CDATA[tFinish]]></Name>
 					<X>360</X><Y>160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -3523,9 +4127,39 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358675</Id>
-					<Name><![CDATA[tReady]]></Name>
-					<X>360</X><Y>80</Y>
+					<Id>1775338910101</Id>
+					<Name><![CDATA[onTime]]></Name>
+					<X>360</X><Y>190</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338910103</Id>
+					<Name><![CDATA[isReady]]></Name>
+					<X>360</X><Y>230</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338910105</Id>
+					<Name><![CDATA[etaPickup]]></Name>
+					<X>535</X><Y>140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3535,9 +4169,9 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358679</Id>
-					<Name><![CDATA[долготаЗабора]]></Name>
-					<X>730</X><Y>50</Y>
+					<Id>1775338910107</Id>
+					<Name><![CDATA[etaDrop]]></Name>
+					<X>535</X><Y>170</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3547,9 +4181,9 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358681</Id>
-					<Name><![CDATA[долготаКлиента]]></Name>
-					<X>865</X><Y>80</Y>
+					<Id>1775338910109</Id>
+					<Name><![CDATA[прогнозЗавершения]]></Name>
+					<X>535</X><Y>230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3559,7 +4193,55 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358683</Id>
+					<Id>1775338910111</Id>
+					<Name><![CDATA[расстояниеDropМ]]></Name>
+					<X>535</X><Y>70</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338910113</Id>
+					<Name><![CDATA[прогнозНачалаДоставки]]></Name>
+					<X>535</X><Y>205</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338910115</Id>
+					<Name><![CDATA[latePenalty]]></Name>
+					<X>535</X><Y>275</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338910117</Id>
+					<Name><![CDATA[scoreНазначения]]></Name>
+					<X>535</X><Y>310</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338910119</Id>
 					<Name><![CDATA[курьерПринялЗаказ]]></Name>
 					<X>540</X><Y>340</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -3574,91 +4256,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358685</Id>
-					<Name><![CDATA[назначенныйКурьер]]></Name>
-					<X>535</X><Y>20</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[Курьер]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775338358689</Id>
-					<Name><![CDATA[последнийОтказавшийсяКурьер]]></Name>
-					<X>540</X><Y>400</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[Курьер]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775338358691</Id>
-					<Name><![CDATA[прогнозЗавершения]]></Name>
-					<X>535</X><Y>230</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775338358693</Id>
-					<Name><![CDATA[прогнозНачалаДоставки]]></Name>
-					<X>535</X><Y>205</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775338358695</Id>
-					<Name><![CDATA[расстояниеDropМ]]></Name>
-					<X>535</X><Y>70</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775338358697</Id>
-					<Name><![CDATA[расстояниеPickupМ]]></Name>
-					<X>535</X><Y>50</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775338358699</Id>
-					<Name><![CDATA[точкаКлиента]]></Name>
-					<X>865</X><Y>20</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[Point]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775338358701</Id>
+					<Id>1775338910121</Id>
 					<Name><![CDATA[числоОтказов]]></Name>
 					<X>540</X><Y>370</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -3673,33 +4271,51 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358703</Id>
-					<Name><![CDATA[широтаЗабора]]></Name>
-					<X>730</X><Y>20</Y>
+					<Id>1775338910123</Id>
+					<Name><![CDATA[последнийОтказавшийсяКурьер]]></Name>
+					<X>540</X><Y>400</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
+						<Type><![CDATA[Курьер]]></Type>        
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1775338358705</Id>
-					<Name><![CDATA[широтаКлиента]]></Name>
-					<X>865</X><Y>50</Y>
+					<Id>1775338910125</Id>
+					<Name><![CDATA[actualDeliveryTime]]></Name>
+					<X>360</X><Y>270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338910127</Id>
+					<Name><![CDATA[delayAmount]]></Name>
+					<X>360</X><Y>300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="Parameter">
-					<Id>1775156062984</Id>
+					<Id>1775338910132</Id>
 					<Name><![CDATA[средняяСтоимостьзаказа]]></Name>
-					<X>120</X><Y>50</Y>
+					<X>15</X><Y>20</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3712,7 +4328,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 							<Code><![CDATA[0.0]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
-							<Id>1775156062982</Id>
+							<Id>1775338910130</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
@@ -3723,7 +4339,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 			</Variables>
 			<AgentLinks>
 				<AgentLink>
-					<Id>1775156026613</Id>
+					<Id>1775338910134</Id>
 					<Name><![CDATA[connections]]></Name>
 					<X>50</X><Y>-50</Y>
 					<Label><X>15</X><Y>0</Y></Label>
@@ -3743,25 +4359,10 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 				</AgentLink>
 			</AgentLinks>
 
-			<ContainerLinks>
-				<ContainerLink>
-					<Id>1775158388721</Id>
-					<Name><![CDATA[main]]></Name>
-					<X>50</X><Y>-100</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[model16]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-					</ActiveObjectClass>
-				</ContainerLink>
-			</ContainerLinks>
 
 			<Presentation>
 				<Level>
-					<Id>1775156026619</Id>
+					<Id>1775338910129</Id>
 					<Name><![CDATA[level]]></Name>
 					<X>0</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -3772,6 +4373,285 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					<Z>0</Z>
 					<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
 
+
+				</Level>
+			</Presentation>
+
+		</ActiveObjectClass>
+		<!--   =========   Active Object Class   ========  -->
+		<ActiveObjectClass>
+			<Id>1775338916958</Id>
+			<Name><![CDATA[Курьер]]></Name>
+			<Generic>false</Generic>
+			<GenericParameter>
+				<Id>1775338916953</Id>
+				<Name><![CDATA[1775338916953]]></Name>
+				<GenericParameterValue Class="CodeValue">
+					<Code><![CDATA[T extends Agent]]></Code>
+				</GenericParameterValue>
+				<GenericParameterLabel><![CDATA[Параметр настройки:]]></GenericParameterLabel>
+			</GenericParameter>
+			<FlowChartsUsage>ENTITY</FlowChartsUsage>
+			<SamplesToKeep>100</SamplesToKeep>
+			<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
+			<ElementsLimitValue>100</ElementsLimitValue>
+			<MakeDefaultViewArea>true</MakeDefaultViewArea>
+			<SceneGridColor/>
+			<SceneBackgroundColor>-4144960</SceneBackgroundColor>
+			<SceneSkybox>null</SceneSkybox>
+			<AgentProperties>
+				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
+				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
+				<RotateAnimationVertically>false</RotateAnimationVertically>
+				<VelocityCode Class="CodeUnitValue">
+					<Code><![CDATA[10]]></Code>
+					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+				</VelocityCode>
+				<PhysicalLength Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalLength>
+				<PhysicalWidth Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalWidth>
+				<PhysicalHeight Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalHeight>
+			</AgentProperties>
+			<EnvironmentProperties>
+					<EnableSteps>false</EnableSteps>
+					<StepDurationCode Class="CodeUnitValue">
+						<Code><![CDATA[1.0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</StepDurationCode>
+					<SpaceType>CONTINUOUS</SpaceType>
+					<WidthCode><![CDATA[500]]></WidthCode>
+					<HeightCode><![CDATA[500]]></HeightCode>
+					<ZHeightCode><![CDATA[0]]></ZHeightCode>
+					<ColumnsCountCode><![CDATA[100]]></ColumnsCountCode>
+					<RowsCountCode><![CDATA[100]]></RowsCountCode>
+					<NeigborhoodType>MOORE</NeigborhoodType>
+					<LayoutType>USER_DEF</LayoutType>
+					<LayoutTypeApplyOnStartup>true</LayoutTypeApplyOnStartup>
+					<NetworkType>USER_DEF</NetworkType>
+					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
+					<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
+					<ConnectionsRangeCode><![CDATA[50]]></ConnectionsRangeCode>
+					<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
+					<MCode><![CDATA[10]]></MCode>
+			</EnvironmentProperties>
+			<DatasetsCreationProperties>
+				<AutoCreate>true</AutoCreate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1774684800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</RecurrenceCode>
+			</DatasetsCreationProperties>
+			<ScaleRuler>
+				<Id>1775338916954</Id>
+				<Name><![CDATA[scale]]></Name>
+				<X>0</X><Y>-150</Y>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>false</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<Length>100</Length>
+				<Rotation>0</Rotation>
+				<ScaleType>BASED_ON_LENGTH</ScaleType>
+				<ModelLength>10</ModelLength>
+				<LengthUnits>METER</LengthUnits>
+				<Scale>10</Scale>
+				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
+			</ScaleRuler>
+			<CurrentLevel>1775338916966</CurrentLevel>
+			<ConnectionsId>1775338916976</ConnectionsId>
+			<Variables>
+				<Variable Class="PlainVariable">
+					<Id>1775338916960</Id>
+					<Name><![CDATA[onShift]]></Name>
+					<X>200</X><Y>50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[true]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338916962</Id>
+					<Name><![CDATA[bannedUntil]]></Name>
+					<X>200</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[-1]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1775338916964</Id>
+					<Name><![CDATA[скоростьМ_С]]></Name>
+					<X>200</X><Y>160</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[10]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1775338916971</Id>
+					<Name><![CDATA[parameter]]></Name>
+					<X>50</X><Y>50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1775338916969</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1775338916974</Id>
+					<Name><![CDATA[isBusy]]></Name>
+					<X>50</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[boolean]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1775338916972</Id>
+							<EditorContolType>CHECK_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+			</Variables>
+			<AgentLinks>
+				<AgentLink>
+					<Id>1775338916976</Id>
+					<Name><![CDATA[connections]]></Name>
+					<X>50</X><Y>-50</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<HandleReceiveInConnections>false</HandleReceiveInConnections>
+					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
+					<AgentLinkBidirectional>true</AgentLinkBidirectional>
+					<MessageType><![CDATA[Object]]></MessageType>
+					<LineStyle>SOLID</LineStyle>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineZOrder>UNDER_AGENTS</LineZOrder>
+					<LineArrow>NONE</LineArrow>
+					<LineArrowPosition>END</LineArrowPosition>
+				</AgentLink>
+			</AgentLinks>
+
+
+			<Presentation>
+				<Level>
+					<Id>1775338916966</Id>
+					<Name><![CDATA[level]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
+
+			<Presentation>
+				<Figure3D>
+					<Id>1775338916968</Id>
+					<Name><![CDATA[person]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>0</X><Y>0</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[model16]]></PackageName>
+						<ClassName><![CDATA[3d/person.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[Material__3__Surf]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__5__Surf]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__6__Surf]]></Name>
+							<OriginalColor>-4083577</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__2__Surf]]></Name>
+							<OriginalColor>-13355980</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__4__Surf]]></Name>
+							<OriginalColor>-13355980</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__1__Surf]]></Name>
+							<OriginalColor>-5279952</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>0.0</Rotation>
+					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+				</Figure3D>
+			</Presentation>
 
 				</Level>
 			</Presentation>
@@ -3825,8 +4705,8 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 	</RunConfiguration>
 	<Experiments>	
 		<!--   =========   Simulation Experiment   ========  -->
-		<SimulationExperiment ActiveObjectClassId="1774636084688">
-			<Id>1774636084697</Id>
+		<SimulationExperiment>
+			<Id>1775338932639</Id>
 			<Name><![CDATA[Simulation]]></Name>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>512</MaximumMemory>
@@ -3838,7 +4718,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
 			<Variables>
 				<Variable Class="PlainVariable">
-					<Id>1775075560379</Id>
+					<Id>1775338932641</Id>
 					<Name><![CDATA[КоличествоТочек]]></Name>
 					<X>220</X><Y>60</Y>
 					<Label><X>10</X><Y>0</Y></Label>
@@ -3857,7 +4737,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 			<Presentation>
 				<Control Type="Slider">
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
-					<Id>1775075511685</Id>
+					<Id>1775338932647</Id>
 					<Name><![CDATA[slider]]></Name>
 					<X>70</X><Y>40</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -3880,7 +4760,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					</ExtendedProperties>
 				</Control>
 				<Text>
-					<Id>1775075870343</Id>
+					<Id>1775338932649</Id>
 					<Name><![CDATA[text]]></Name>
 					<X>70</X><Y>70</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -3902,7 +4782,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					<Alignment>LEFT</Alignment>
 				</Text>
 				<Text>
-					<Id>1775075870345</Id>
+					<Id>1775338932651</Id>
 					<Name><![CDATA[text1]]></Name>
 					<X>170</X><Y>70</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -3924,7 +4804,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					<Alignment>RIGHT</Alignment>
 				</Text>
 				<Text>
-					<Id>1775075870347</Id>
+					<Id>1775338932653</Id>
 					<Name><![CDATA[text2]]></Name>
 					<X>120</X><Y>70</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -3946,7 +4826,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					<Alignment>CENTER</Alignment>
 				</Text>
 				<Text>
-					<Id>1775137709981</Id>
+					<Id>1775338932655</Id>
 					<Name><![CDATA[text3]]></Name>
 					<X>160</X><Y>20</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -3967,7 +4847,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					<Alignment>LEFT</Alignment>
 				</Text>
 				<Text>
-					<Id>1775137778311</Id>
+					<Id>1775338932657</Id>
 					<Name><![CDATA[text4]]></Name>
 					<X>70</X><Y>70</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -3989,7 +4869,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					<Alignment>LEFT</Alignment>
 				</Text>
 				<Text>
-					<Id>1775137778313</Id>
+					<Id>1775338932659</Id>
 					<Name><![CDATA[text5]]></Name>
 					<X>170</X><Y>70</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -4011,7 +4891,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					<Alignment>RIGHT</Alignment>
 				</Text>
 				<Text>
-					<Id>1775137778315</Id>
+					<Id>1775338932661</Id>
 					<Name><![CDATA[text6]]></Name>
 					<X>120</X><Y>70</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -4033,7 +4913,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					<Alignment>CENTER</Alignment>
 				</Text>
 				<Text>
-					<Id>1775137779636</Id>
+					<Id>1775338932663</Id>
 					<Name><![CDATA[text7]]></Name>
 					<X>70</X><Y>70</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -4055,7 +4935,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					<Alignment>LEFT</Alignment>
 				</Text>
 				<Text>
-					<Id>1775137779638</Id>
+					<Id>1775338932665</Id>
 					<Name><![CDATA[text8]]></Name>
 					<X>170</X><Y>70</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -4077,7 +4957,7 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 					<Alignment>RIGHT</Alignment>
 				</Text>
 				<Text>
-					<Id>1775137779640</Id>
+					<Id>1775338932667</Id>
 					<Name><![CDATA[text9]]></Name>
 					<X>120</X><Y>70</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -4149,6 +5029,12 @@ traceln("РАССТОЯНИЕ ОТ АГЕНТА ДО 51" + agent.distanceTo(51.0
 		<LibraryName><![CDATA[com.anylogic.libraries.material_handling]]></LibraryName>
 		<VersionMajor>8</VersionMajor>
 		<VersionMinor>3</VersionMinor>
+		<VersionBuild>0</VersionBuild>
+    </RequiredLibraryReference>
+    <RequiredLibraryReference>
+		<LibraryName><![CDATA[model162]]></LibraryName>
+		<VersionMajor>0</VersionMajor>
+		<VersionMinor>0</VersionMinor>
 		<VersionBuild>0</VersionBuild>
     </RequiredLibraryReference>
 </Model>
