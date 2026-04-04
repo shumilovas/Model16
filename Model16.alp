@@ -848,6 +848,34 @@ double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 
 return R * c;]]></Body>
 				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1775337862236</Id>
+					<Name><![CDATA[расстояниеМ]]></Name>
+					<X>-1100</X><Y>120</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[lat1]]></Name>
+						<Type><![CDATA[double]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[lon1]]></Name>
+						<Type><![CDATA[double]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[lat2]]></Name>
+						<Type><![CDATA[double]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[lon2]]></Name>
+						<Type><![CDATA[double]]></Type>
+					</Parameter>
+					<Body><![CDATA[return расстояниеКм(lat1, lon1, lat2, lon2) * 1000.0;]]></Body>
+				</Function>
 			</Functions>
 			<AgentLinks>
 				<AgentLink>
