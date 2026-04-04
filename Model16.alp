@@ -724,9 +724,7 @@
 
 double minDistance = 100;
 double foundedDistance = 0;
-double 
 
-traceln("РАЗМЕР ПОПУЛЯЦИИ "+myAgent1.size());
 for (int i=0;i<myAgent1.size();i++){
  	traceln("итератор "+i); 	
  	traceln(myAgent1.get(i).parameter);
@@ -762,6 +760,54 @@ return myA;]]></Body>
     коллекцияТочекДляЗаказа.add(случайнаяТочкаЗаказаВГеоКоорд);
 }
   ]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1775337523486</Id>
+					<Name><![CDATA[рассчитатьТекущуюЗагрузкуКурьеров]]></Name>
+					<X>-1360</X><Y>140</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[if (myAgent1.isEmpty()) {
+    return 0;
+}
+
+int busyCount = 0;
+
+for (int i = 0; i < myAgent1.size(); i++) {
+    if (myAgent1.get(i).isBusy) {
+        busyCount++;
+    }
+}
+
+return (double) busyCount / myAgent1.size();]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[boolean]]></ReturnType>
+					<Id>1775337723983</Id>
+					<Name><![CDATA[курьерПринимаетЗаказ]]></Name>
+					<X>-1350</X><Y>90</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[c]]></Name>
+						<Type><![CDATA[Курьер]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[z]]></Name>
+						<Type><![CDATA[Заказ]]></Type>
+					</Parameter>
+					<Body><![CDATA[if (c == null || z == null) {
+    return false;
+}
+
+return uniform(0, 1) >= pОтказаКурьера;]]></Body>
 				</Function>
 			</Functions>
 			<AgentLinks>
