@@ -876,6 +876,30 @@ return R * c;]]></Body>
 					</Parameter>
 					<Body><![CDATA[return расстояниеКм(lat1, lon1, lat2, lon2) * 1000.0;]]></Body>
 				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1775337981199</Id>
+					<Name><![CDATA[рассчитатьP95]]></Name>
+					<X>-1360</X><Y>120</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[if (deliveryTimes.isEmpty()) {
+    return 0;
+}
+
+ArrayList<Double> sorted = new ArrayList<>(deliveryTimes);
+Collections.sort(sorted);
+
+int n = sorted.size();
+int index = (int) Math.ceil(0.95 * n) - 1;
+
+index = max(0, min(index, n - 1));
+
+return sorted.get(index);]]></Body>
+				</Function>
 			</Functions>
 			<AgentLinks>
 				<AgentLink>
