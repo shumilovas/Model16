@@ -17,6 +17,7 @@
 			<Id>1774636084688</Id>
 			<Name><![CDATA[Main]]></Name>
 			<StartupCode><![CDATA[определитьТочкиДляЗаказа();
+КоординатыДаркстора.setLatLon(55.751244, 37.618423);
 
 ]]></StartupCode>
 			<Generic>false</Generic>
@@ -140,32 +141,14 @@
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1775308074471</Id>
-					<Name><![CDATA[широтаДаркстора]]></Name>
+					<Name><![CDATA[КоординатыДаркстора]]></Name>
 					<X>-390</X><Y>90</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[55.751244]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1775308096379</Id>
-					<Name><![CDATA[долготаДаркстора]]></Name>
-					<X>-390</X><Y>120</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[37.618423]]></Code>
-						</InitialValue>
+						<Type><![CDATA[Point]]></Type>        
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
@@ -1118,8 +1101,8 @@ return distM / скоростьМ_Мин;]]></Body>
 					<Body><![CDATA[traceln(
     "Курьер coords: lat=" + c.getLatitude() +
     ", lon=" + c.getLongitude() +
-    " | pickup: lat=" + z.широтаЗабора +
-    ", lon=" + z.долготаЗабора
+    " | pickup: lat=" + z.КоординатыЗабора.getLatitude() +
+    ", lon=" + z.КоординатыЗабора.getLongitude()
 );
 
 if (c == null || z == null) {
@@ -1185,7 +1168,7 @@ return true;]]></Body>
 					</Parameter>
 					<Body><![CDATA[return расстояниеМ(
     c.getLatitude(), c.getLongitude(),
-    z.широтаЗабора, z.долготаЗабора
+    z.КоординатыЗабора.getLatitude(), z.КоординатыЗабора.getLongitude()
 );]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
@@ -1203,7 +1186,7 @@ return true;]]></Body>
 						<Type><![CDATA[Заказ]]></Type>
 					</Parameter>
 					<Body><![CDATA[return расстояниеМ(
-    z.широтаЗабора, z.долготаЗабора,
+    z.КоординатыЗабора.getLatitude(), z.КоординатыЗабора.getLongitude(),
     z.широтаКлиента, z.долготаКлиента
 );]]></Body>
 				</Function>
@@ -1596,11 +1579,10 @@ return (double) busyCount / myAgent1.size();]]></Body>
 								<Code><![CDATA[Point p = областьДоставки.randomPointInside();
 
 agent.точкаКлиента = p;
-agent.широтаКлиента = p.getLatitude();
-agent.долготаКлиента = p.getLongitude();
+agent.КоординатыЗабора = p;
 
-agent.широтаЗабора = широтаДаркстора;
-agent.долготаЗабора = долготаДаркстора;
+agent.setLatLon(КоординатыДаркстора.getLatitude(), 
+				КоординатыДаркстора.getLongitude());
 
 agent.tCreate = time();
 agent.prepTime = uniform(5*minute(), 15*minute());
@@ -1610,8 +1592,8 @@ agent.tDeadline = agent.tCreate + 60*minute();
 agent.isReady = false;
 
 traceln(
-    "SOURCE: pickup lat=" + agent.широтаЗабора +
-    ", lon=" + agent.долготаЗабора +
+    "SOURCE: pickup lat=" + agent.КоординатыЗабора.getLatitude() +
+    ", lon=" + agent.КоординатыЗабора.getLongitude() +
     " | client lat=" + agent.широтаКлиента +
     ", lon=" + agent.долготаКлиента
 );]]></Code>
@@ -2800,10 +2782,10 @@ traceln(
 						<Code><![CDATA[0]]></Code>
 					</RowCode>
 					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[широтаДаркстора]]></Code>
+						<Code><![CDATA[КоординатыДаркстора.getLatitude()]]></Code>
 					</LatitudeCode>
 					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[долготаДаркстора]]></Code>
+						<Code><![CDATA[КоординатыДаркстора.getLongitude()]]></Code>
 					</LongitudeCode>
 					<NodeCode><![CDATA[nvrn]]></NodeCode>
 					<LocationNameCode Class="CodeValue">
@@ -3046,13 +3028,13 @@ traceln(
 						<Parameter>
 							<Name><![CDATA[destinationLatitude]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[agent.широтаЗабора]]></Code>
+								<Code><![CDATA[agent.КоординатыЗабора.getLatitude()]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[destinationLongitude]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[agent.долготаЗабора]]></Code>
+								<Code><![CDATA[agent.КоординатыЗабора.getLongitude()]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -5979,14 +5961,14 @@ traceln(
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1775308193739</Id>
-					<Name><![CDATA[долготаЗабора]]></Name>
+					<Name><![CDATA[КоординатыЗабора]]></Name>
 					<X>730</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
+						<Type><![CDATA[Point]]></Type>        
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
