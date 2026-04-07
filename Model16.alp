@@ -3889,9 +3889,9 @@ agent.назначенныйКурьер = null;
 					<Height>600</Height>
 					<GISShapes>
 					</GISShapes>
-					<Latitude>55.762381012794904</Latitude>
-					<Longitude>37.64294289951112</Longitude>
-					<Scale>200000</Scale>
+					<Latitude>55.73067151373753</Latitude>
+					<Longitude>37.644343085314645</Longitude>
+					<Scale>10000</Scale>
 					<BorderColor>-4144960</BorderColor>
 					<FillColor>-1</FillColor>
 					<ShowTiles>true</ShowTiles>
@@ -5657,6 +5657,29 @@ agent.назначенныйКурьер = null;
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
+				<Control Type="Window3D">
+					<Id>1775582873922</Id>
+					<Name><![CDATA[window3d]]></Name>
+					<X>120</X><Y>820</Y>
+					<Width>500</Width>
+					<Height>300</Height>
+					<MakeDefaultViewArea>true</MakeDefaultViewArea>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<FollowCamera>false</FollowCamera>
+					<NavigationType>full</NavigationType>
+					<FarClippingDistance>2000</FarClippingDistance>
+					<Camera>camera</Camera>
+				</Control>
+				<Camera3D>
+					<Id>1775582884289</Id>
+					<Name><![CDATA[camera]]></Name>
+					<X>350</X><Y>80</Y><Z>100</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<RotationX>0.0</RotationX>
+					<RotationZ>45.0</RotationZ>
+				</Camera3D>
 			</Presentation>
 
 				</Level>
