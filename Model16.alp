@@ -1365,27 +1365,27 @@ return (double) busyCount / myAgent1.size();]]></Body>
 					</IntervalsQuery>
 					<Intervals>
 						<Interval>
-							<Start>28800000</Start>
+							<Start>39600000</Start>
 							<End>61200000</End>
 							<Value>0.15</Value>
 						</Interval>
 						<Interval>
-							<Start>115200000</Start>
+							<Start>126000000</Start>
 							<End>147600000</End>
 							<Value>0.15</Value>
 						</Interval>
 						<Interval>
-							<Start>201600000</Start>
+							<Start>212400000</Start>
 							<End>234000000</End>
 							<Value>0.15</Value>
 						</Interval>
 						<Interval>
-							<Start>288000000</Start>
+							<Start>298800000</Start>
 							<End>320400000</End>
 							<Value>0.15</Value>
 						</Interval>
 						<Interval>
-							<Start>374400000</Start>
+							<Start>385200000</Start>
 							<End>406800000</End>
 							<Value>0.15</Value>
 						</Interval>
@@ -1450,49 +1450,154 @@ return (double) busyCount / myAgent1.size();]]></Body>
 							<Value>0.3</Value>
 						</Interval>
 						<Interval>
-							<Start>489600000</Start>
+							<Start>504000000</Start>
 							<End>514800000</End>
 							<Value>0.4</Value>
 						</Interval>
 						<Interval>
-							<Start>576000000</Start>
+							<Start>590400000</Start>
 							<End>601200000</End>
 							<Value>0.4</Value>
 						</Interval>
 						<Interval>
-							<Start>82800000</Start>
-							<End>14400000</End>
-							<Value>0.05</Value>
+							<Start>25200000</Start>
+							<End>28800000</End>
+							<Value>0.02</Value>
 						</Interval>
 						<Interval>
-							<Start>169200000</Start>
-							<End>100800000</End>
-							<Value>0.05</Value>
+							<Start>111600000</Start>
+							<End>115200000</End>
+							<Value>0.02</Value>
 						</Interval>
 						<Interval>
-							<Start>255600000</Start>
-							<End>187200000</End>
-							<Value>0.05</Value>
+							<Start>198000000</Start>
+							<End>201600000</End>
+							<Value>0.02</Value>
 						</Interval>
 						<Interval>
-							<Start>342000000</Start>
-							<End>273600000</End>
-							<Value>0.05</Value>
+							<Start>284400000</Start>
+							<End>288000000</End>
+							<Value>0.02</Value>
 						</Interval>
 						<Interval>
-							<Start>428400000</Start>
-							<End>360000000</End>
-							<Value>0.05</Value>
+							<Start>370800000</Start>
+							<End>374400000</End>
+							<Value>0.02</Value>
 						</Interval>
 						<Interval>
-							<Start>514800000</Start>
-							<End>446400000</End>
-							<Value>0.05</Value>
+							<Start>457200000</Start>
+							<End>460800000</End>
+							<Value>0.02</Value>
 						</Interval>
 						<Interval>
-							<Start>601200000</Start>
-							<End>532800000</End>
-							<Value>0.05</Value>
+							<Start>543600000</Start>
+							<End>547200000</End>
+							<Value>0.02</Value>
+						</Interval>
+						<Interval>
+							<Start>28800000</Start>
+							<End>32400000</End>
+							<Value>0.04</Value>
+						</Interval>
+						<Interval>
+							<Start>115200000</Start>
+							<End>118800000</End>
+							<Value>0.04</Value>
+						</Interval>
+						<Interval>
+							<Start>201600000</Start>
+							<End>205200000</End>
+							<Value>0.04</Value>
+						</Interval>
+						<Interval>
+							<Start>288000000</Start>
+							<End>291600000</End>
+							<Value>0.04</Value>
+						</Interval>
+						<Interval>
+							<Start>374400000</Start>
+							<End>378000000</End>
+							<Value>0.04</Value>
+						</Interval>
+						<Interval>
+							<Start>460800000</Start>
+							<End>464400000</End>
+							<Value>0.04</Value>
+						</Interval>
+						<Interval>
+							<Start>547200000</Start>
+							<End>550800000</End>
+							<Value>0.04</Value>
+						</Interval>
+						<Interval>
+							<Start>32400000</Start>
+							<End>36000000</End>
+							<Value>0.08</Value>
+						</Interval>
+						<Interval>
+							<Start>118800000</Start>
+							<End>122400000</End>
+							<Value>0.08</Value>
+						</Interval>
+						<Interval>
+							<Start>205200000</Start>
+							<End>208800000</End>
+							<Value>0.08</Value>
+						</Interval>
+						<Interval>
+							<Start>291600000</Start>
+							<End>295200000</End>
+							<Value>0.08</Value>
+						</Interval>
+						<Interval>
+							<Start>378000000</Start>
+							<End>381600000</End>
+							<Value>0.08</Value>
+						</Interval>
+						<Interval>
+							<Start>464400000</Start>
+							<End>468000000</End>
+							<Value>0.08</Value>
+						</Interval>
+						<Interval>
+							<Start>550800000</Start>
+							<End>554400000</End>
+							<Value>0.08</Value>
+						</Interval>
+						<Interval>
+							<Start>36000000</Start>
+							<End>39600000</End>
+							<Value>0.09</Value>
+						</Interval>
+						<Interval>
+							<Start>122400000</Start>
+							<End>126000000</End>
+							<Value>0.09</Value>
+						</Interval>
+						<Interval>
+							<Start>208800000</Start>
+							<End>212400000</End>
+							<Value>0.09</Value>
+						</Interval>
+						<Interval>
+							<Start>295200000</Start>
+							<End>298800000</End>
+							<Value>0.1</Value>
+						</Interval>
+						<Interval>
+							<Start>381600000</Start>
+							<End>385200000</End>
+							<Value>0.1</Value>
+						</Interval>
+						<Interval>
+							<Start>489600000</Start>
+							<End>504000000</End>
+							<Value>0.3</Value>
+						</Interval>
+						<Interval>
+							<Start>576000000</Start>
+							<End>590400000</End>
+							<Value>0.3</Value>
 						</Interval>
 					</Intervals>
 					<Exceptions>
@@ -7108,6 +7213,255 @@ if (!isCompleted && !lateCounted) {
 				<InitialTime><![CDATA[0.0]]></InitialTime>	
 				<FinalDate><![CDATA[1773299700000]]></FinalDate>	
 				<FinalTime><![CDATA[120.0]]></FinalTime>	
+			</ModelTimeProperties>
+			<BypassInitialScreen>true</BypassInitialScreen>
+		</SimulationExperiment>
+		<!--   =========   Simulation Experiment   ========  -->
+		<SimulationExperiment ActiveObjectClassId="1774636084688">
+			<Id>1776016699323</Id>
+			<Name><![CDATA[СубботаВечерМакс]]></Name>
+			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
+			<MaximumMemory>512</MaximumMemory>
+			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
+			<SeedValue>1</SeedValue>
+			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
+			<VmArgs><![CDATA[]]></VmArgs>
+			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+
+			<Presentation>
+				<Text>
+					<Id>1776016699325</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>50</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<Text><![CDATA[Model16]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Presentation>
+
+			<Parameters>			
+				<Parameter>
+					<ParameterName><![CDATA[N_couriers]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[courierSpeed]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[T_search]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[pickupServiceTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[handoverTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[pCourierRefusal]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[tauBan]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[prepMin]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[prepMax]]></ParameterName>
+				</Parameter>
+			</Parameters>			
+			<PresentationProperties>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
+				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
+				<Title><![CDATA[Model16 : субботаВечерМакс]]></Title>	
+				<EnableDeveloperPanel>true</EnableDeveloperPanel>
+				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+				<RealTimeScale>1.0</RealTimeScale>
+			</PresentationProperties>
+			<ModelTimeProperties>
+				<StopOption><![CDATA[Stop at specified time]]></StopOption>
+				<InitialDate><![CDATA[1773504000000]]></InitialDate>	
+				<InitialTime><![CDATA[0.0]]></InitialTime>	
+				<FinalDate><![CDATA[1773504240000]]></FinalDate>	
+				<FinalTime><![CDATA[4.0]]></FinalTime>	
+			</ModelTimeProperties>
+			<BypassInitialScreen>true</BypassInitialScreen>
+		</SimulationExperiment>
+		<!--   =========   Simulation Experiment   ========  -->
+		<SimulationExperiment ActiveObjectClassId="1774636084688">
+			<Id>1776016824332</Id>
+			<Name><![CDATA[БуднийНаНочьМедиум]]></Name>
+			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
+			<MaximumMemory>512</MaximumMemory>
+			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
+			<SeedValue>1</SeedValue>
+			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
+			<VmArgs><![CDATA[]]></VmArgs>
+			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+
+			<Presentation>
+				<Text>
+					<Id>1776016824334</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>50</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<Text><![CDATA[Model16]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Presentation>
+
+			<Parameters>			
+				<Parameter>
+					<ParameterName><![CDATA[N_couriers]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[courierSpeed]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[T_search]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[pickupServiceTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[handoverTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[pCourierRefusal]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[tauBan]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[prepMin]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[prepMax]]></ParameterName>
+				</Parameter>
+			</Parameters>			
+			<PresentationProperties>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
+				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
+				<Title><![CDATA[Model16 : БуднийНаНочьМедиум]]></Title>	
+				<EnableDeveloperPanel>true</EnableDeveloperPanel>
+				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+				<RealTimeScale>1.0</RealTimeScale>
+			</PresentationProperties>
+			<ModelTimeProperties>
+				<StopOption><![CDATA[Stop at specified time]]></StopOption>
+				<InitialDate><![CDATA[1773313200000]]></InitialDate>	
+				<InitialTime><![CDATA[0.0]]></InitialTime>	
+				<FinalDate><![CDATA[1773313320000]]></FinalDate>	
+				<FinalTime><![CDATA[2.0]]></FinalTime>	
+			</ModelTimeProperties>
+			<BypassInitialScreen>true</BypassInitialScreen>
+		</SimulationExperiment>
+		<!--   =========   Simulation Experiment   ========  -->
+		<SimulationExperiment ActiveObjectClassId="1774636084688">
+			<Id>1776016887236</Id>
+			<Name><![CDATA[БуднийУтроМинимум]]></Name>
+			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
+			<MaximumMemory>512</MaximumMemory>
+			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
+			<SeedValue>1</SeedValue>
+			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
+			<VmArgs><![CDATA[]]></VmArgs>
+			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+
+			<Presentation>
+				<Text>
+					<Id>1776016887238</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>50</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<Text><![CDATA[Model16]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Presentation>
+
+			<Parameters>			
+				<Parameter>
+					<ParameterName><![CDATA[N_couriers]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[courierSpeed]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[T_search]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[pickupServiceTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[handoverTime]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[pCourierRefusal]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[tauBan]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[prepMin]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[prepMax]]></ParameterName>
+				</Parameter>
+			</Parameters>			
+			<PresentationProperties>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
+				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
+				<Title><![CDATA[Model16 : БуднийУтроМинимум]]></Title>	
+				<EnableDeveloperPanel>true</EnableDeveloperPanel>
+				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+				<RealTimeScale>1.0</RealTimeScale>
+			</PresentationProperties>
+			<ModelTimeProperties>
+				<StopOption><![CDATA[Stop at specified time]]></StopOption>
+				<InitialDate><![CDATA[1773292500000]]></InitialDate>	
+				<InitialTime><![CDATA[0.0]]></InitialTime>	
+				<FinalDate><![CDATA[1773292740000]]></FinalDate>	
+				<FinalTime><![CDATA[4.0]]></FinalTime>	
 			</ModelTimeProperties>
 			<BypassInitialScreen>true</BypassInitialScreen>
 		</SimulationExperiment>	
