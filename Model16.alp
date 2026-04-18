@@ -920,20 +920,20 @@
 						<OccurrenceAtTime>true</OccurrenceAtTime>
 						<OccurrenceDate>1775980800000</OccurrenceDate>
 						<OccurrenceTime Class="CodeUnitValue">
-							<Code><![CDATA[0]]></Code>
+							<Code><![CDATA[5]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 						</OccurrenceTime>
 						<RecurrenceCode Class="CodeUnitValue">
-							<Code><![CDATA[5]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+							<Code><![CDATA[20]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
 					<Action><![CDATA[for(int i=0; i<заказы.size(); i++)
-	if ( time() == заказы.get(i).tCreate)	
-	{	
-	traceln("событие для агента = " + i);
-	заказы.get(i).function();
+		{	if (time() == (max(0, заказы.get(i).tDeadline - time())))
+			traceln("событие для агента = " + i);
+			заказы.get(i).function(); 
+	//заказы.get(i).контрольДедлайна.restart();
 	}]]></Action>
 				</Event>
 			</Events>
@@ -2138,6 +2138,7 @@ agent.actualDeliveryTime = agent.tFinish - agent.tCreate;
 agent.isCompleted = true;
 
 agent.onTime = !agent.deadlineMissed;
+//traceln("agent.deadlineMissed = true; AGENT = " +agent.getId());
 
 completedOrders++;
 deliveryTimes.add(agent.actualDeliveryTime);
@@ -12774,25 +12775,78 @@ agent.назначенныйКурьер = null;
 					</Properties>                 
 				</Variable>
 			</Variables>
+			<Events>
+				<Event>
+					<Id>1776545977702</Id>
+					<Name><![CDATA[контрольДедлайна]]></Name>
+					<X>50</X><Y>210</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="occuresOnce">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1775376000000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[max(0, tDeadline - time())]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[if (!isCompleted && !lateCounted  ) {
+	traceln("in event");
+    deadlineMissed = true;
+    lateCounted = true;
+
+    main.lateOrders++;
+    
+    //traceln(
+       // "DEADLINE MISSED: order=" + this +
+       // " | time=" + time() +
+       // " | deadline=" + tDeadline
+   // );
+}]]></Action>
+				</Event>
+			</Events>
 			<Functions>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>VOID</ReturnModificator>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1775992622593</Id>
 					<Name><![CDATA[function]]></Name>
-					<X>60</X><Y>210</Y>
+					<X>60</X><Y>250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[traceln("in function");
-traceln(" ");
-if (!isCompleted && !lateCounted) {
+					<Body><![CDATA[//контрольДедлайна.restart();
+if (time() == max(0, tDeadline - time())) {
+	if (!isCompleted && !lateCounted  ) {
+	traceln("in function");
     deadlineMissed = true;
     lateCounted = true;
-    //++main.lateOrders;
-    ++get_Main().lateOrders;
-    }]]></Body>
+
+    main.lateOrders++;
+    
+    //traceln(
+       // "DEADLINE MISSED: order=" + this +
+       // " | time=" + time() +
+       // " | deadline=" + tDeadline
+   // );
+}
+}]]></Body>
 				</Function>
 			</Functions>
 			<AgentLinks>
